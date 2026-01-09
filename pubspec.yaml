@@ -1,0 +1,60 @@
+name: formula_deck
+description: "FormulaDeck - The Lazy Student's Vault. A comprehensive offline-first formula reference app with calculator, bookmarks, and premium features."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.8
+  
+  # State Management
+  flutter_riverpod: ^2.6.1
+  
+  # Local Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # LaTeX Rendering
+  flutter_math_fork: ^0.7.2
+  
+  # Navigation
+  go_router: ^14.2.7
+  
+  # Authentication
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  google_sign_in: ^6.2.1
+  
+  # Ads
+  google_mobile_ads: ^5.1.0
+  
+  # In-App Purchase
+  in_app_purchase: ^3.2.0
+  
+  # Utilities
+  path_provider: ^2.1.4
+  shared_preferences: ^2.3.2
+  collection: ^1.19.1
+  
+  # Haptics
+  haptic_feedback: ^0.6.4+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/formulas.json

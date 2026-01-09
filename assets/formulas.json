@@ -1,0 +1,5343 @@
+{
+  "formulas": [
+    {
+      "id": "alg_1",
+      "title": "Quadratic Formula",
+      "category": "Algebra",
+      "latex": "x=\\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}",
+      "description": "Solves quadratic equations of form ax²+bx+c=0",
+      "variables": [
+        {
+          "name": "a",
+          "type": "double"
+        },
+        {
+          "name": "b",
+          "type": "double"
+        },
+        {
+          "name": "c",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "a",
+          "b",
+          "c"
+        ],
+        "output": "x"
+      }
+    },
+    {
+      "id": "alg_2",
+      "title": "Distance Formula",
+      "category": "Algebra",
+      "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+      "description": "Distance between two points in coordinate plane",
+      "variables": [
+        {
+          "name": "x1",
+          "type": "double"
+        },
+        {
+          "name": "y1",
+          "type": "double"
+        },
+        {
+          "name": "x2",
+          "type": "double"
+        },
+        {
+          "name": "y2",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "x1",
+          "y1",
+          "x2",
+          "y2"
+        ],
+        "output": "d"
+      }
+    },
+    {
+      "id": "alg_3",
+      "title": "Midpoint Formula",
+      "category": "Algebra",
+      "latex": "M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+      "description": "Midpoint between two points",
+      "variables": [
+        {
+          "name": "x1",
+          "type": "double"
+        },
+        {
+          "name": "y1",
+          "type": "double"
+        },
+        {
+          "name": "x2",
+          "type": "double"
+        },
+        {
+          "name": "y2",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "x1",
+          "y1",
+          "x2",
+          "y2"
+        ],
+        "output": "M"
+      }
+    },
+    {
+      "id": "alg_4",
+      "title": "Slope Formula",
+      "category": "Algebra",
+      "latex": "m=\\frac{y_2-y_1}{x_2-x_1}",
+      "description": "Slope of a line through two points",
+      "variables": [
+        {
+          "name": "x1",
+          "type": "double"
+        },
+        {
+          "name": "y1",
+          "type": "double"
+        },
+        {
+          "name": "x2",
+          "type": "double"
+        },
+        {
+          "name": "y2",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "x1",
+          "y1",
+          "x2",
+          "y2"
+        ],
+        "output": "m"
+      }
+    },
+    {
+      "id": "alg_5",
+      "title": "Arithmetic Mean",
+      "category": "Algebra",
+      "latex": "\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i",
+      "description": "Average of n numbers",
+      "variables": [
+        {
+          "name": "n",
+          "type": "int"
+        },
+        {
+          "name": "sum",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "n",
+          "sum"
+        ],
+        "output": "mean"
+      }
+    },
+    {
+      "id": "alg_6",
+      "title": "Geometric Mean",
+      "category": "Algebra",
+      "latex": "GM=\\sqrt[n]{x_1 \\cdot x_2 \\cdot ... \\cdot x_n}",
+      "description": "Geometric mean of n positive numbers",
+      "variables": [
+        {
+          "name": "n",
+          "type": "int"
+        },
+        {
+          "name": "product",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "n",
+          "product"
+        ],
+        "output": "GM"
+      }
+    },
+    {
+      "id": "alg_7",
+      "title": "Simple Interest",
+      "category": "Algebra",
+      "latex": "I=\\frac{P \\times R \\times T}{100}",
+      "description": "Simple interest calculation",
+      "variables": [
+        {
+          "name": "P",
+          "type": "double",
+          "description": "Principal"
+        },
+        {
+          "name": "R",
+          "type": "double",
+          "description": "Rate"
+        },
+        {
+          "name": "T",
+          "type": "double",
+          "description": "Time"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "P",
+          "R",
+          "T"
+        ],
+        "output": "I"
+      }
+    },
+    {
+      "id": "alg_8",
+      "title": "Compound Interest",
+      "category": "Algebra",
+      "latex": "A=P\\left(1+\\frac{r}{n}\\right)^{nt}",
+      "description": "Compound interest formula",
+      "variables": [
+        {
+          "name": "P",
+          "type": "double"
+        },
+        {
+          "name": "r",
+          "type": "double"
+        },
+        {
+          "name": "n",
+          "type": "double"
+        },
+        {
+          "name": "t",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "P",
+          "r",
+          "n",
+          "t"
+        ],
+        "output": "A"
+      }
+    },
+    {
+      "id": "alg_9",
+      "title": "Factoring Difference of Squares",
+      "category": "Algebra",
+      "latex": "a^2-b^2=(a+b)(a-b)",
+      "description": "Factoring formula for difference of squares",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_10",
+      "title": "Factoring Sum of Cubes",
+      "category": "Algebra",
+      "latex": "a^3+b^3=(a+b)(a^2-ab+b^2)",
+      "description": "Factoring formula for sum of cubes",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_11",
+      "title": "Factoring Difference of Cubes",
+      "category": "Algebra",
+      "latex": "a^3-b^3=(a-b)(a^2+ab+b^2)",
+      "description": "Factoring formula for difference of cubes",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_12",
+      "title": "Logarithm Product Rule",
+      "category": "Algebra",
+      "latex": "\\log(ab)=\\log(a)+\\log(b)",
+      "description": "Product rule for logarithms",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_13",
+      "title": "Logarithm Quotient Rule",
+      "category": "Algebra",
+      "latex": "\\log\\left(\\frac{a}{b}\\right)=\\log(a)-\\log(b)",
+      "description": "Quotient rule for logarithms",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_14",
+      "title": "Logarithm Power Rule",
+      "category": "Algebra",
+      "latex": "\\log(a^n)=n\\log(a)",
+      "description": "Power rule for logarithms",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_15",
+      "title": "Change of Base Formula",
+      "category": "Algebra",
+      "latex": "\\log_b(a)=\\frac{\\log_c(a)}{\\log_c(b)}",
+      "description": "Change of base for logarithms",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_16",
+      "title": "Exponential Growth",
+      "category": "Algebra",
+      "latex": "A=A_0e^{rt}",
+      "description": "Exponential growth formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_17",
+      "title": "Exponential Decay",
+      "category": "Algebra",
+      "latex": "A=A_0e^{-rt}",
+      "description": "Exponential decay formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_18",
+      "title": "Sum of Arithmetic Series",
+      "category": "Algebra",
+      "latex": "S_n=\\frac{n}{2}(a_1+a_n)",
+      "description": "Sum of arithmetic series",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_19",
+      "title": "Sum of Geometric Series",
+      "category": "Algebra",
+      "latex": "S_n=\\frac{a(1-r^n)}{1-r}",
+      "description": "Sum of geometric series",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_20",
+      "title": "Infinite Geometric Series",
+      "category": "Algebra",
+      "latex": "S=\\frac{a}{1-r}",
+      "description": "Sum of infinite geometric series when |r|<1",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_21",
+      "title": "Binomial Theorem",
+      "category": "Algebra",
+      "latex": "(a+b)^n=\\sum_{k=0}^{n}\\binom{n}{k}a^{n-k}b^k",
+      "description": "Binomial expansion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_22",
+      "title": "Permutation",
+      "category": "Algebra",
+      "latex": "P(n,r)=\\frac{n!}{(n-r)!}",
+      "description": "Number of permutations",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_23",
+      "title": "Combination",
+      "category": "Algebra",
+      "latex": "C(n,r)=\\binom{n}{r}=\\frac{n!}{r!(n-r)!}",
+      "description": "Number of combinations",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_24",
+      "title": "Area of Circle",
+      "category": "Geometry",
+      "latex": "A=\\pi r^2",
+      "description": "Area of a circle",
+      "variables": [
+        {
+          "name": "r",
+          "type": "double",
+          "description": "Radius"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "r"
+        ],
+        "output": "A"
+      }
+    },
+    {
+      "id": "geo_25",
+      "title": "Circumference of Circle",
+      "category": "Geometry",
+      "latex": "C=2\\pi r",
+      "description": "Circumference of a circle",
+      "variables": [
+        {
+          "name": "r",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "r"
+        ],
+        "output": "C"
+      }
+    },
+    {
+      "id": "geo_26",
+      "title": "Area of Rectangle",
+      "category": "Geometry",
+      "latex": "A=l \\times w",
+      "description": "Area of a rectangle",
+      "variables": [
+        {
+          "name": "l",
+          "type": "double"
+        },
+        {
+          "name": "w",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "l",
+          "w"
+        ],
+        "output": "A"
+      }
+    },
+    {
+      "id": "geo_27",
+      "title": "Area of Triangle",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}bh",
+      "description": "Area of a triangle",
+      "variables": [
+        {
+          "name": "b",
+          "type": "double"
+        },
+        {
+          "name": "h",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "b",
+          "h"
+        ],
+        "output": "A"
+      }
+    },
+    {
+      "id": "geo_28",
+      "title": "Pythagorean Theorem",
+      "category": "Geometry",
+      "latex": "a^2+b^2=c^2",
+      "description": "Relationship between sides of right triangle",
+      "variables": [
+        {
+          "name": "a",
+          "type": "double"
+        },
+        {
+          "name": "b",
+          "type": "double"
+        },
+        {
+          "name": "c",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "a",
+          "b"
+        ],
+        "output": "c"
+      }
+    },
+    {
+      "id": "geo_29",
+      "title": "Volume of Sphere",
+      "category": "Geometry",
+      "latex": "V=\\frac{4}{3}\\pi r^3",
+      "description": "Volume of a sphere",
+      "variables": [
+        {
+          "name": "r",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "r"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "geo_30",
+      "title": "Volume of Cylinder",
+      "category": "Geometry",
+      "latex": "V=\\pi r^2 h",
+      "description": "Volume of a cylinder",
+      "variables": [
+        {
+          "name": "r",
+          "type": "double"
+        },
+        {
+          "name": "h",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "r",
+          "h"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "geo_31",
+      "title": "Volume of Cone",
+      "category": "Geometry",
+      "latex": "V=\\frac{1}{3}\\pi r^2 h",
+      "description": "Volume of a cone",
+      "variables": [
+        {
+          "name": "r",
+          "type": "double"
+        },
+        {
+          "name": "h",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "r",
+          "h"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "geo_32",
+      "title": "Volume of Cube",
+      "category": "Geometry",
+      "latex": "V=s^3",
+      "description": "Volume of a cube",
+      "variables": [
+        {
+          "name": "s",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "s"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "geo_33",
+      "title": "Volume of Rectangular Prism",
+      "category": "Geometry",
+      "latex": "V=l \\times w \\times h",
+      "description": "Volume of rectangular prism",
+      "variables": [
+        {
+          "name": "l",
+          "type": "double"
+        },
+        {
+          "name": "w",
+          "type": "double"
+        },
+        {
+          "name": "h",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "l",
+          "w",
+          "h"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "geo_34",
+      "title": "Area of Parallelogram",
+      "category": "Geometry",
+      "latex": "A=bh",
+      "description": "Area of parallelogram",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_35",
+      "title": "Area of Trapezoid",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}(b_1+b_2)h",
+      "description": "Area of trapezoid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_36",
+      "title": "Area of Rhombus",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}d_1d_2",
+      "description": "Area of rhombus using diagonals",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_37",
+      "title": "Area of Regular Polygon",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}ap",
+      "description": "Area of regular polygon",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_38",
+      "title": "Surface Area of Sphere",
+      "category": "Geometry",
+      "latex": "SA=4\\pi r^2",
+      "description": "Surface area of sphere",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_39",
+      "title": "Surface Area of Cylinder",
+      "category": "Geometry",
+      "latex": "SA=2\\pi r^2+2\\pi rh",
+      "description": "Surface area of cylinder",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_40",
+      "title": "Surface Area of Cone",
+      "category": "Geometry",
+      "latex": "SA=\\pi r^2+\\pi rl",
+      "description": "Surface area of cone",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_41",
+      "title": "Law of Cosines",
+      "category": "Geometry",
+      "latex": "c^2=a^2+b^2-2ab\\cos(C)",
+      "description": "Law of cosines",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_42",
+      "title": "Law of Sines",
+      "category": "Geometry",
+      "latex": "\\frac{a}{\\sin(A)}=\\frac{b}{\\sin(B)}=\\frac{c}{\\sin(C)}",
+      "description": "Law of sines",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_43",
+      "title": "Heron's Formula",
+      "category": "Geometry",
+      "latex": "A=\\sqrt{s(s-a)(s-b)(s-c)}",
+      "description": "Area of triangle using Heron's formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_44",
+      "title": "Euler's Formula",
+      "category": "Geometry",
+      "latex": "V-E+F=2",
+      "description": "Euler's formula for polyhedra",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_45",
+      "title": "Arc Length",
+      "category": "Geometry",
+      "latex": "s=r\\theta",
+      "description": "Arc length formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_46",
+      "title": "Sector Area",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}r^2\\theta",
+      "description": "Area of circular sector",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_47",
+      "title": "Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(\\theta)=\\frac{opposite}{hypotenuse}",
+      "description": "Sine function definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_48",
+      "title": "Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(\\theta)=\\frac{adjacent}{hypotenuse}",
+      "description": "Cosine function definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_49",
+      "title": "Tangent",
+      "category": "Trigonometry",
+      "latex": "\\tan(\\theta)=\\frac{opposite}{adjacent}",
+      "description": "Tangent function definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_50",
+      "title": "Pythagorean Identity",
+      "category": "Trigonometry",
+      "latex": "\\sin^2(\\theta)+\\cos^2(\\theta)=1",
+      "description": "Fundamental trigonometric identity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_51",
+      "title": "Sum of Angles - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(A+B)=\\sin(A)\\cos(B)+\\cos(A)\\sin(B)",
+      "description": "Sine of sum of angles",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_52",
+      "title": "Sum of Angles - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(A+B)=\\cos(A)\\cos(B)-\\sin(A)\\sin(B)",
+      "description": "Cosine of sum of angles",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_53",
+      "title": "Double Angle - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(2\\theta)=2\\sin(\\theta)\\cos(\\theta)",
+      "description": "Sine of double angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_54",
+      "title": "Double Angle - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(2\\theta)=\\cos^2(\\theta)-\\sin^2(\\theta)",
+      "description": "Cosine of double angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_55",
+      "title": "Half Angle - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin\\left(\\frac{\\theta}{2}\\right)=\\pm\\sqrt{\\frac{1-\\cos(\\theta)}{2}}",
+      "description": "Sine of half angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_56",
+      "title": "Half Angle - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos\\left(\\frac{\\theta}{2}\\right)=\\pm\\sqrt{\\frac{1+\\cos(\\theta)}{2}}",
+      "description": "Cosine of half angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_57",
+      "title": "Product to Sum - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(A)\\sin(B)=\\frac{1}{2}[\\cos(A-B)-\\cos(A+B)]",
+      "description": "Product to sum for sine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_58",
+      "title": "Product to Sum - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(A)\\cos(B)=\\frac{1}{2}[\\cos(A-B)+\\cos(A+B)]",
+      "description": "Product to sum for cosine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_59",
+      "title": "Derivative - Power Rule",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(x^n)=nx^{n-1}",
+      "description": "Power rule for derivatives",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_60",
+      "title": "Derivative - Product Rule",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(fg)=f'g+fg'",
+      "description": "Product rule for derivatives",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_61",
+      "title": "Derivative - Quotient Rule",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}\\left(\\frac{f}{g}\\right)=\\frac{f'g-fg'}{g^2}",
+      "description": "Quotient rule for derivatives",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_62",
+      "title": "Derivative - Chain Rule",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(f(g(x)))=f'(g(x))g'(x)",
+      "description": "Chain rule for derivatives",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_63",
+      "title": "Derivative of Sine",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\sin(x))=\\cos(x)",
+      "description": "Derivative of sine function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_64",
+      "title": "Derivative of Cosine",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\cos(x))=-\\sin(x)",
+      "description": "Derivative of cosine function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_65",
+      "title": "Derivative of Exponential",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(e^x)=e^x",
+      "description": "Derivative of exponential function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_66",
+      "title": "Derivative of Logarithm",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\ln(x))=\\frac{1}{x}",
+      "description": "Derivative of natural logarithm",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_67",
+      "title": "Fundamental Theorem of Calculus",
+      "category": "Calculus",
+      "latex": "\\int_a^b f(x)dx=F(b)-F(a)",
+      "description": "Fundamental theorem of calculus",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_68",
+      "title": "Integration by Parts",
+      "category": "Calculus",
+      "latex": "\\int u dv=uv-\\int v du",
+      "description": "Integration by parts formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_69",
+      "title": "L'Hôpital's Rule",
+      "category": "Calculus",
+      "latex": "\\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\lim_{x\\to a}\\frac{f'(x)}{g'(x)}",
+      "description": "L'Hôpital's rule for limits",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_70",
+      "title": "Velocity",
+      "category": "Mechanics",
+      "latex": "v=\\frac{d}{t}",
+      "description": "Average velocity formula",
+      "variables": [
+        {
+          "name": "d",
+          "type": "double"
+        },
+        {
+          "name": "t",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "d",
+          "t"
+        ],
+        "output": "v"
+      }
+    },
+    {
+      "id": "mech_71",
+      "title": "Acceleration",
+      "category": "Mechanics",
+      "latex": "a=\\frac{v-u}{t}",
+      "description": "Acceleration formula",
+      "variables": [
+        {
+          "name": "v",
+          "type": "double"
+        },
+        {
+          "name": "u",
+          "type": "double"
+        },
+        {
+          "name": "t",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "v",
+          "u",
+          "t"
+        ],
+        "output": "a"
+      }
+    },
+    {
+      "id": "mech_72",
+      "title": "Force (Newton's Second Law)",
+      "category": "Mechanics",
+      "latex": "F=ma",
+      "description": "Newton's second law of motion",
+      "variables": [
+        {
+          "name": "m",
+          "type": "double"
+        },
+        {
+          "name": "a",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "m",
+          "a"
+        ],
+        "output": "F"
+      }
+    },
+    {
+      "id": "mech_73",
+      "title": "Kinetic Energy",
+      "category": "Mechanics",
+      "latex": "KE=\\frac{1}{2}mv^2",
+      "description": "Kinetic energy formula",
+      "variables": [
+        {
+          "name": "m",
+          "type": "double"
+        },
+        {
+          "name": "v",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "m",
+          "v"
+        ],
+        "output": "KE"
+      }
+    },
+    {
+      "id": "mech_74",
+      "title": "Potential Energy",
+      "category": "Mechanics",
+      "latex": "PE=mgh",
+      "description": "Gravitational potential energy",
+      "variables": [
+        {
+          "name": "m",
+          "type": "double"
+        },
+        {
+          "name": "g",
+          "type": "double"
+        },
+        {
+          "name": "h",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "m",
+          "g",
+          "h"
+        ],
+        "output": "PE"
+      }
+    },
+    {
+      "id": "mech_75",
+      "title": "Momentum",
+      "category": "Mechanics",
+      "latex": "p=mv",
+      "description": "Linear momentum formula",
+      "variables": [
+        {
+          "name": "m",
+          "type": "double"
+        },
+        {
+          "name": "v",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "m",
+          "v"
+        ],
+        "output": "p"
+      }
+    },
+    {
+      "id": "mech_76",
+      "title": "Work",
+      "category": "Mechanics",
+      "latex": "W=Fd\\cos(\\theta)",
+      "description": "Work done by a force",
+      "variables": [
+        {
+          "name": "F",
+          "type": "double"
+        },
+        {
+          "name": "d",
+          "type": "double"
+        },
+        {
+          "name": "theta",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "F",
+          "d",
+          "theta"
+        ],
+        "output": "W"
+      }
+    },
+    {
+      "id": "mech_77",
+      "title": "Power",
+      "category": "Mechanics",
+      "latex": "P=\\frac{W}{t}",
+      "description": "Power formula",
+      "variables": [
+        {
+          "name": "W",
+          "type": "double"
+        },
+        {
+          "name": "t",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "W",
+          "t"
+        ],
+        "output": "P"
+      }
+    },
+    {
+      "id": "mech_78",
+      "title": "Newton's First Law",
+      "category": "Mechanics",
+      "latex": "\\sum F=0",
+      "description": "Object at rest stays at rest",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_79",
+      "title": "Newton's Third Law",
+      "category": "Mechanics",
+      "latex": "F_{12}=-F_{21}",
+      "description": "Action-reaction pairs",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_80",
+      "title": "Centripetal Force",
+      "category": "Mechanics",
+      "latex": "F_c=\\frac{mv^2}{r}",
+      "description": "Centripetal force",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_81",
+      "title": "Centripetal Acceleration",
+      "category": "Mechanics",
+      "latex": "a_c=\\frac{v^2}{r}",
+      "description": "Centripetal acceleration",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_82",
+      "title": "Torque",
+      "category": "Mechanics",
+      "latex": "\\tau=rF\\sin(\\theta)",
+      "description": "Torque formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_83",
+      "title": "Angular Velocity",
+      "category": "Mechanics",
+      "latex": "\\omega=\\frac{\\theta}{t}",
+      "description": "Angular velocity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_84",
+      "title": "Angular Acceleration",
+      "category": "Mechanics",
+      "latex": "\\alpha=\\frac{\\Delta\\omega}{t}",
+      "description": "Angular acceleration",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_85",
+      "title": "Rotational Kinetic Energy",
+      "category": "Mechanics",
+      "latex": "KE_{rot}=\\frac{1}{2}I\\omega^2",
+      "description": "Rotational kinetic energy",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_86",
+      "title": "Moment of Inertia - Point Mass",
+      "category": "Mechanics",
+      "latex": "I=mr^2",
+      "description": "Moment of inertia for point mass",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_87",
+      "title": "Conservation of Momentum",
+      "category": "Mechanics",
+      "latex": "m_1v_1+m_2v_2=m_1v_1'+m_2v_2'",
+      "description": "Conservation of linear momentum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_88",
+      "title": "Impulse",
+      "category": "Mechanics",
+      "latex": "J=F\\Delta t",
+      "description": "Impulse formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_89",
+      "title": "Hooke's Law",
+      "category": "Mechanics",
+      "latex": "F=-kx",
+      "description": "Spring force",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_90",
+      "title": "Simple Harmonic Motion",
+      "category": "Mechanics",
+      "latex": "x=A\\cos(\\omega t+\\phi)",
+      "description": "SHM displacement",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_91",
+      "title": "Period of Pendulum",
+      "category": "Mechanics",
+      "latex": "T=2\\pi\\sqrt{\\frac{L}{g}}",
+      "description": "Period of simple pendulum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_92",
+      "title": "Escape Velocity",
+      "category": "Mechanics",
+      "latex": "v_e=\\sqrt{\\frac{2GM}{r}}",
+      "description": "Escape velocity from planet",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_93",
+      "title": "Ohm's Law",
+      "category": "Electricity",
+      "latex": "V=IR",
+      "description": "Relationship between voltage, current, and resistance",
+      "variables": [
+        {
+          "name": "I",
+          "type": "double"
+        },
+        {
+          "name": "R",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "I",
+          "R"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "elec_94",
+      "title": "Electric Power",
+      "category": "Electricity",
+      "latex": "P=IV",
+      "description": "Electric power formula",
+      "variables": [
+        {
+          "name": "I",
+          "type": "double"
+        },
+        {
+          "name": "V",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "I",
+          "V"
+        ],
+        "output": "P"
+      }
+    },
+    {
+      "id": "elec_95",
+      "title": "Resistance",
+      "category": "Electricity",
+      "latex": "R=\\frac{\\rho L}{A}",
+      "description": "Resistance of a conductor",
+      "variables": [
+        {
+          "name": "rho",
+          "type": "double"
+        },
+        {
+          "name": "L",
+          "type": "double"
+        },
+        {
+          "name": "A",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "rho",
+          "L",
+          "A"
+        ],
+        "output": "R"
+      }
+    },
+    {
+      "id": "elec_96",
+      "title": "Coulomb's Law",
+      "category": "Electricity",
+      "latex": "F=k\\frac{q_1q_2}{r^2}",
+      "description": "Electrostatic force between two charges",
+      "variables": [
+        {
+          "name": "q1",
+          "type": "double"
+        },
+        {
+          "name": "q2",
+          "type": "double"
+        },
+        {
+          "name": "r",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "q1",
+          "q2",
+          "r"
+        ],
+        "output": "F"
+      }
+    },
+    {
+      "id": "elec_97",
+      "title": "Electric Field",
+      "category": "Electricity",
+      "latex": "E=\\frac{F}{q}",
+      "description": "Electric field strength",
+      "variables": [
+        {
+          "name": "F",
+          "type": "double"
+        },
+        {
+          "name": "q",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "F",
+          "q"
+        ],
+        "output": "E"
+      }
+    },
+    {
+      "id": "elec_98",
+      "title": "Electric Potential",
+      "category": "Electricity",
+      "latex": "V=\\frac{kq}{r}",
+      "description": "Electric potential due to point charge",
+      "variables": [
+        {
+          "name": "q",
+          "type": "double"
+        },
+        {
+          "name": "r",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "q",
+          "r"
+        ],
+        "output": "V"
+      }
+    },
+    {
+      "id": "elec_99",
+      "title": "Capacitance",
+      "category": "Electricity",
+      "latex": "C=\\frac{Q}{V}",
+      "description": "Capacitance formula",
+      "variables": [
+        {
+          "name": "Q",
+          "type": "double"
+        },
+        {
+          "name": "V",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "Q",
+          "V"
+        ],
+        "output": "C"
+      }
+    },
+    {
+      "id": "elec_100",
+      "title": "Energy Stored in Capacitor",
+      "category": "Electricity",
+      "latex": "U=\\frac{1}{2}CV^2",
+      "description": "Energy stored in a capacitor",
+      "variables": [
+        {
+          "name": "C",
+          "type": "double"
+        },
+        {
+          "name": "V",
+          "type": "double"
+        }
+      ],
+      "calculator": {
+        "inputs": [
+          "C",
+          "V"
+        ],
+        "output": "U"
+      }
+    },
+    {
+      "id": "elec_101",
+      "title": "Series Resistance",
+      "category": "Electricity",
+      "latex": "R_{total}=R_1+R_2+...+R_n",
+      "description": "Total resistance in series",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_102",
+      "title": "Parallel Resistance",
+      "category": "Electricity",
+      "latex": "\\frac{1}{R_{total}}=\\frac{1}{R_1}+\\frac{1}{R_2}+...+\\frac{1}{R_n}",
+      "description": "Total resistance in parallel",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_103",
+      "title": "Magnetic Force",
+      "category": "Electricity",
+      "latex": "F=qvB\\sin(\\theta)",
+      "description": "Force on charged particle in magnetic field",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_104",
+      "title": "Magnetic Field - Straight Wire",
+      "category": "Electricity",
+      "latex": "B=\\frac{\\mu_0 I}{2\\pi r}",
+      "description": "Magnetic field around straight wire",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_105",
+      "title": "Faraday's Law",
+      "category": "Electricity",
+      "latex": "\\varepsilon=-N\\frac{\\Delta\\Phi}{\\Delta t}",
+      "description": "Electromagnetic induction",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_106",
+      "title": "Lenz's Law",
+      "category": "Electricity",
+      "latex": "\\varepsilon=-\\frac{d\\Phi_B}{dt}",
+      "description": "Direction of induced EMF",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_107",
+      "title": "Transformer Equation",
+      "category": "Electricity",
+      "latex": "\\frac{V_1}{V_2}=\\frac{N_1}{N_2}",
+      "description": "Voltage ratio in transformer",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_108",
+      "title": "Wave Speed",
+      "category": "Waves",
+      "latex": "v=f\\lambda",
+      "description": "Wave speed formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_109",
+      "title": "Wave Equation",
+      "category": "Waves",
+      "latex": "y(x,t)=A\\sin(kx-\\omega t+\\phi)",
+      "description": "General wave equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_110",
+      "title": "Frequency",
+      "category": "Waves",
+      "latex": "f=\\frac{1}{T}",
+      "description": "Frequency from period",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_111",
+      "title": "Angular Frequency",
+      "category": "Waves",
+      "latex": "\\omega=2\\pi f",
+      "description": "Angular frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_112",
+      "title": "Wave Number",
+      "category": "Waves",
+      "latex": "k=\\frac{2\\pi}{\\lambda}",
+      "description": "Wave number",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_113",
+      "title": "Doppler Effect",
+      "category": "Waves",
+      "latex": "f'=f\\frac{v\\pm v_o}{v\\mp v_s}",
+      "description": "Doppler effect formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_114",
+      "title": "Snell's Law",
+      "category": "Waves",
+      "latex": "n_1\\sin(\\theta_1)=n_2\\sin(\\theta_2)",
+      "description": "Refraction law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_115",
+      "title": "Critical Angle",
+      "category": "Waves",
+      "latex": "\\sin(\\theta_c)=\\frac{n_2}{n_1}",
+      "description": "Total internal reflection",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_116",
+      "title": "Lens Equation",
+      "category": "Waves",
+      "latex": "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}",
+      "description": "Thin lens equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_117",
+      "title": "Magnification",
+      "category": "Waves",
+      "latex": "m=-\\frac{d_i}{d_o}",
+      "description": "Magnification formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_118",
+      "title": "Mirror Equation",
+      "category": "Waves",
+      "latex": "\\frac{1}{f}=\\frac{1}{d_o}+\\frac{1}{d_i}",
+      "description": "Spherical mirror equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_119",
+      "title": "Double Slit Interference",
+      "category": "Waves",
+      "latex": "d\\sin(\\theta)=m\\lambda",
+      "description": "Constructive interference",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_120",
+      "title": "Single Slit Diffraction",
+      "category": "Waves",
+      "latex": "a\\sin(\\theta)=m\\lambda",
+      "description": "Diffraction pattern",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_121",
+      "title": "Ideal Gas Law",
+      "category": "Thermodynamics",
+      "latex": "PV=nRT",
+      "description": "Ideal gas equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_122",
+      "title": "First Law of Thermodynamics",
+      "category": "Thermodynamics",
+      "latex": "\\Delta U=Q-W",
+      "description": "Conservation of energy",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_123",
+      "title": "Efficiency",
+      "category": "Thermodynamics",
+      "latex": "\\eta=\\frac{W_{out}}{Q_{in}}",
+      "description": "Thermal efficiency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_124",
+      "title": "Carnot Efficiency",
+      "category": "Thermodynamics",
+      "latex": "\\eta=1-\\frac{T_c}{T_h}",
+      "description": "Maximum possible efficiency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_125",
+      "title": "Heat Transfer - Conduction",
+      "category": "Thermodynamics",
+      "latex": "Q=\\frac{kA\\Delta T}{d}",
+      "description": "Conductive heat transfer",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_126",
+      "title": "Specific Heat",
+      "category": "Thermodynamics",
+      "latex": "Q=mc\\Delta T",
+      "description": "Heat capacity formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_127",
+      "title": "Latent Heat",
+      "category": "Thermodynamics",
+      "latex": "Q=mL",
+      "description": "Latent heat formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_128",
+      "title": "Entropy Change",
+      "category": "Thermodynamics",
+      "latex": "\\Delta S=\\frac{Q}{T}",
+      "description": "Entropy change",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_129",
+      "title": "RMS Speed",
+      "category": "Thermodynamics",
+      "latex": "v_{rms}=\\sqrt{\\frac{3RT}{M}}",
+      "description": "Root mean square speed",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_130",
+      "title": "Average Kinetic Energy",
+      "category": "Thermodynamics",
+      "latex": "KE_{avg}=\\frac{3}{2}kT",
+      "description": "Average kinetic energy of gas",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_131",
+      "title": "Molarity",
+      "category": "Chemistry",
+      "latex": "M=\\frac{n}{V}",
+      "description": "Molarity formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_132",
+      "title": "Dilution",
+      "category": "Chemistry",
+      "latex": "M_1V_1=M_2V_2",
+      "description": "Dilution equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_133",
+      "title": "Ideal Gas Law (Chemistry)",
+      "category": "Chemistry",
+      "latex": "PV=nRT",
+      "description": "Ideal gas law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_134",
+      "title": "pH",
+      "category": "Chemistry",
+      "latex": "pH=-\\log[H^+]",
+      "description": "pH calculation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_135",
+      "title": "pOH",
+      "category": "Chemistry",
+      "latex": "pOH=-\\log[OH^-]",
+      "description": "pOH calculation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_136",
+      "title": "pH + pOH",
+      "category": "Chemistry",
+      "latex": "pH+pOH=14",
+      "description": "Relationship at 25°C",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_137",
+      "title": "Rate Law",
+      "category": "Chemistry",
+      "latex": "rate=k[A]^m[B]^n",
+      "description": "Rate law expression",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_138",
+      "title": "Arrhenius Equation",
+      "category": "Chemistry",
+      "latex": "k=Ae^{-E_a/RT}",
+      "description": "Temperature dependence of rate",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_139",
+      "title": "Nernst Equation",
+      "category": "Chemistry",
+      "latex": "E=E^0-\\frac{RT}{nF}\\ln(Q)",
+      "description": "Cell potential",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_140",
+      "title": "Henderson-Hasselbalch",
+      "category": "Chemistry",
+      "latex": "pH=pK_a+\\log\\left(\\frac{[A^-]}{[HA]}\\right)",
+      "description": "Buffer pH calculation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_141",
+      "title": "Mean",
+      "category": "Statistics",
+      "latex": "\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i",
+      "description": "Arithmetic mean",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_142",
+      "title": "Variance",
+      "category": "Statistics",
+      "latex": "\\sigma^2=\\frac{1}{n}\\sum_{i=1}^{n}(x_i-\\bar{x})^2",
+      "description": "Population variance",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_143",
+      "title": "Standard Deviation",
+      "category": "Statistics",
+      "latex": "\\sigma=\\sqrt{\\frac{1}{n}\\sum_{i=1}^{n}(x_i-\\bar{x})^2}",
+      "description": "Population standard deviation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_144",
+      "title": "Z-Score",
+      "category": "Statistics",
+      "latex": "z=\\frac{x-\\mu}{\\sigma}",
+      "description": "Standard score",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_145",
+      "title": "Correlation Coefficient",
+      "category": "Statistics",
+      "latex": "r=\\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sqrt{\\sum(x_i-\\bar{x})^2\\sum(y_i-\\bar{y})^2}}",
+      "description": "Pearson correlation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_146",
+      "title": "Binomial Probability",
+      "category": "Statistics",
+      "latex": "P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}",
+      "description": "Binomial distribution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_147",
+      "title": "Normal Distribution",
+      "category": "Statistics",
+      "latex": "f(x)=\\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}",
+      "description": "Normal probability density",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_148",
+      "title": "Quadratic Discriminant",
+      "category": "Algebra",
+      "latex": "\\Delta=b^2-4ac",
+      "description": "Discriminant of quadratic equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_149",
+      "title": "Vertex Form",
+      "category": "Algebra",
+      "latex": "y=a(x-h)^2+k",
+      "description": "Vertex form of parabola",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_150",
+      "title": "Standard Form",
+      "category": "Algebra",
+      "latex": "y=ax^2+bx+c",
+      "description": "Standard form of quadratic",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_151",
+      "title": "Factored Form",
+      "category": "Algebra",
+      "latex": "y=a(x-r_1)(x-r_2)",
+      "description": "Factored form of quadratic",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_152",
+      "title": "Sum of Roots",
+      "category": "Algebra",
+      "latex": "r_1+r_2=-\\frac{b}{a}",
+      "description": "Sum of quadratic roots",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_153",
+      "title": "Product of Roots",
+      "category": "Algebra",
+      "latex": "r_1r_2=\\frac{c}{a}",
+      "description": "Product of quadratic roots",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_154",
+      "title": "Completing the Square",
+      "category": "Algebra",
+      "latex": "x^2+bx+\\left(\\frac{b}{2}\\right)^2=\\left(x+\\frac{b}{2}\\right)^2",
+      "description": "Completing the square method",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_155",
+      "title": "Absolute Value",
+      "category": "Algebra",
+      "latex": "|x|=\\begin{cases} x & \\text{if } x\\geq 0 \\\\ -x & \\text{if } x<0 \\end{cases}",
+      "description": "Absolute value definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_156",
+      "title": "Distance from Point to Line",
+      "category": "Algebra",
+      "latex": "d=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}",
+      "description": "Distance from point to line",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_157",
+      "title": "Equation of Circle",
+      "category": "Algebra",
+      "latex": "(x-h)^2+(y-k)^2=r^2",
+      "description": "Standard equation of circle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_158",
+      "title": "Equation of Ellipse",
+      "category": "Algebra",
+      "latex": "\\frac{(x-h)^2}{a^2}+\\frac{(y-k)^2}{b^2}=1",
+      "description": "Standard equation of ellipse",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_159",
+      "title": "Equation of Hyperbola",
+      "category": "Algebra",
+      "latex": "\\frac{(x-h)^2}{a^2}-\\frac{(y-k)^2}{b^2}=1",
+      "description": "Standard equation of hyperbola",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_160",
+      "title": "Equation of Parabola",
+      "category": "Algebra",
+      "latex": "(x-h)^2=4p(y-k)",
+      "description": "Standard equation of parabola",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_161",
+      "title": "Matrix Determinant 2x2",
+      "category": "Algebra",
+      "latex": "\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc",
+      "description": "Determinant of 2x2 matrix",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_162",
+      "title": "Matrix Multiplication",
+      "category": "Algebra",
+      "latex": "C_{ij}=\\sum_{k}A_{ik}B_{kj}",
+      "description": "Matrix multiplication",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_163",
+      "title": "Inverse Matrix 2x2",
+      "category": "Algebra",
+      "latex": "A^{-1}=\\frac{1}{\\det(A)}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}",
+      "description": "Inverse of 2x2 matrix",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_164",
+      "title": "Cramer's Rule",
+      "category": "Algebra",
+      "latex": "x_i=\\frac{\\det(A_i)}{\\det(A)}",
+      "description": "Cramer's rule for solving systems",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_165",
+      "title": "Gaussian Elimination",
+      "category": "Algebra",
+      "latex": "Row operations to solve systems",
+      "description": "Method for solving linear systems",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_166",
+      "title": "Vector Magnitude",
+      "category": "Algebra",
+      "latex": "|\\vec{v}|=\\sqrt{v_x^2+v_y^2+v_z^2}",
+      "description": "Magnitude of 3D vector",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_167",
+      "title": "Dot Product",
+      "category": "Algebra",
+      "latex": "\\vec{a}\\cdot\\vec{b}=a_xb_x+a_yb_y+a_zb_z",
+      "description": "Dot product of vectors",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_168",
+      "title": "Cross Product",
+      "category": "Algebra",
+      "latex": "\\vec{a}\\times\\vec{b}=\\begin{vmatrix}\\hat{i}&\\hat{j}&\\hat{k}\\\\a_x&a_y&a_z\\\\b_x&b_y&b_z\\end{vmatrix}",
+      "description": "Cross product of vectors",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_169",
+      "title": "Angle Between Vectors",
+      "category": "Algebra",
+      "latex": "\\cos(\\theta)=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}",
+      "description": "Angle between two vectors",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_170",
+      "title": "Projection of Vector",
+      "category": "Algebra",
+      "latex": "\\text{proj}_{\\vec{b}}\\vec{a}=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{b}|^2}\\vec{b}",
+      "description": "Vector projection",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_171",
+      "title": "Complex Number Addition",
+      "category": "Algebra",
+      "latex": "(a+bi)+(c+di)=(a+c)+(b+d)i",
+      "description": "Addition of complex numbers",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_172",
+      "title": "Complex Number Multiplication",
+      "category": "Algebra",
+      "latex": "(a+bi)(c+di)=(ac-bd)+(ad+bc)i",
+      "description": "Multiplication of complex numbers",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_173",
+      "title": "Complex Conjugate",
+      "category": "Algebra",
+      "latex": "\\overline{a+bi}=a-bi",
+      "description": "Complex conjugate",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_174",
+      "title": "Modulus of Complex",
+      "category": "Algebra",
+      "latex": "|a+bi|=\\sqrt{a^2+b^2}",
+      "description": "Modulus of complex number",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_175",
+      "title": "Euler's Formula",
+      "category": "Algebra",
+      "latex": "e^{i\\theta}=\\cos(\\theta)+i\\sin(\\theta)",
+      "description": "Euler's formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_176",
+      "title": "De Moivre's Theorem",
+      "category": "Algebra",
+      "latex": "(\\cos(\\theta)+i\\sin(\\theta))^n=\\cos(n\\theta)+i\\sin(n\\theta)",
+      "description": "De Moivre's theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_177",
+      "title": "Partial Fractions",
+      "category": "Algebra",
+      "latex": "\\frac{P(x)}{Q(x)}=\\sum\\frac{A_i}{(x-r_i)}",
+      "description": "Partial fraction decomposition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_178",
+      "title": "Synthetic Division",
+      "category": "Algebra",
+      "latex": "Polynomial division method",
+      "description": "Method for dividing polynomials",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_179",
+      "title": "Remainder Theorem",
+      "category": "Algebra",
+      "latex": "P(a)=remainder when P(x) divided by (x-a)",
+      "description": "Remainder theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_180",
+      "title": "Factor Theorem",
+      "category": "Algebra",
+      "latex": "If P(a)=0, then (x-a) is a factor",
+      "description": "Factor theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_181",
+      "title": "Rational Root Theorem",
+      "category": "Algebra",
+      "latex": "Possible rational roots are factors of constant/leading coefficient",
+      "description": "Finding rational roots",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_182",
+      "title": "Descartes' Rule of Signs",
+      "category": "Algebra",
+      "latex": "Number of positive/negative roots",
+      "description": "Rule for determining roots",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "alg_183",
+      "title": "Vieta's Formulas",
+      "category": "Algebra",
+      "latex": "Relationships between roots and coefficients",
+      "description": "Vieta's formulas for polynomials",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_184",
+      "title": "Area of Square",
+      "category": "Geometry",
+      "latex": "A=s^2",
+      "description": "Area of square",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_185",
+      "title": "Perimeter of Square",
+      "category": "Geometry",
+      "latex": "P=4s",
+      "description": "Perimeter of square",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_186",
+      "title": "Area of Parallelogram (Alt)",
+      "category": "Geometry",
+      "latex": "A=ab\\sin(\\theta)",
+      "description": "Area using sides and angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_187",
+      "title": "Area of Kite",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}d_1d_2",
+      "description": "Area of kite",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_188",
+      "title": "Area of Regular Hexagon",
+      "category": "Geometry",
+      "latex": "A=\\frac{3\\sqrt{3}}{2}s^2",
+      "description": "Area of regular hexagon",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_189",
+      "title": "Area of Regular Octagon",
+      "category": "Geometry",
+      "latex": "A=2(1+\\sqrt{2})s^2",
+      "description": "Area of regular octagon",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_190",
+      "title": "Volume of Pyramid",
+      "category": "Geometry",
+      "latex": "V=\\frac{1}{3}Bh",
+      "description": "Volume of pyramid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_191",
+      "title": "Volume of Prism",
+      "category": "Geometry",
+      "latex": "V=Bh",
+      "description": "Volume of prism",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_192",
+      "title": "Volume of Torus",
+      "category": "Geometry",
+      "latex": "V=2\\pi^2Rr^2",
+      "description": "Volume of torus",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_193",
+      "title": "Surface Area of Cube",
+      "category": "Geometry",
+      "latex": "SA=6s^2",
+      "description": "Surface area of cube",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_194",
+      "title": "Surface Area of Rectangular Prism",
+      "category": "Geometry",
+      "latex": "SA=2(lw+lh+wh)",
+      "description": "Surface area of rectangular prism",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_195",
+      "title": "Surface Area of Pyramid",
+      "category": "Geometry",
+      "latex": "SA=B+\\frac{1}{2}Pl",
+      "description": "Surface area of pyramid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_196",
+      "title": "Lateral Surface Area of Cone",
+      "category": "Geometry",
+      "latex": "LSA=\\pi rl",
+      "description": "Lateral surface area of cone",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_197",
+      "title": "Lateral Surface Area of Cylinder",
+      "category": "Geometry",
+      "latex": "LSA=2\\pi rh",
+      "description": "Lateral surface area of cylinder",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_198",
+      "title": "Area of Ellipse",
+      "category": "Geometry",
+      "latex": "A=\\pi ab",
+      "description": "Area of ellipse",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_199",
+      "title": "Perimeter of Ellipse (Approx)",
+      "category": "Geometry",
+      "latex": "P\\approx\\pi[3(a+b)-\\sqrt{(3a+b)(a+3b)}]",
+      "description": "Approximate perimeter of ellipse",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_200",
+      "title": "Area of Sector",
+      "category": "Geometry",
+      "latex": "A=\\frac{\\theta}{360}\\pi r^2",
+      "description": "Area of sector in degrees",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_201",
+      "title": "Arc Length (Degrees)",
+      "category": "Geometry",
+      "latex": "s=\\frac{\\theta}{360}2\\pi r",
+      "description": "Arc length in degrees",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_202",
+      "title": "Chord Length",
+      "category": "Geometry",
+      "latex": "c=2r\\sin\\left(\\frac{\\theta}{2}\\right)",
+      "description": "Chord length formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_203",
+      "title": "Segment Area",
+      "category": "Geometry",
+      "latex": "A=\\frac{r^2}{2}(\\theta-\\sin(\\theta))",
+      "description": "Area of circular segment",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_204",
+      "title": "Inradius of Triangle",
+      "category": "Geometry",
+      "latex": "r=\\frac{A}{s}",
+      "description": "Inradius using area and semiperimeter",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_205",
+      "title": "Circumradius of Triangle",
+      "category": "Geometry",
+      "latex": "R=\\frac{abc}{4A}",
+      "description": "Circumradius formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_206",
+      "title": "Area using Heron's Formula",
+      "category": "Geometry",
+      "latex": "A=\\sqrt{s(s-a)(s-b)(s-c)}",
+      "description": "Heron's formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_207",
+      "title": "Semiperimeter",
+      "category": "Geometry",
+      "latex": "s=\\frac{a+b+c}{2}",
+      "description": "Semiperimeter of triangle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_208",
+      "title": "Area of Equilateral Triangle",
+      "category": "Geometry",
+      "latex": "A=\\frac{\\sqrt{3}}{4}s^2",
+      "description": "Area of equilateral triangle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_209",
+      "title": "Height of Equilateral Triangle",
+      "category": "Geometry",
+      "latex": "h=\\frac{\\sqrt{3}}{2}s",
+      "description": "Height of equilateral triangle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_210",
+      "title": "Area of Isosceles Triangle",
+      "category": "Geometry",
+      "latex": "A=\\frac{b}{4}\\sqrt{4a^2-b^2}",
+      "description": "Area of isosceles triangle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_211",
+      "title": "Area of Scalene Triangle",
+      "category": "Geometry",
+      "latex": "A=\\frac{1}{2}ab\\sin(C)",
+      "description": "Area using two sides and included angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_212",
+      "title": "Volume of Frustum",
+      "category": "Geometry",
+      "latex": "V=\\frac{1}{3}h(A_1+A_2+\\sqrt{A_1A_2})",
+      "description": "Volume of frustum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_213",
+      "title": "Surface Area of Frustum",
+      "category": "Geometry",
+      "latex": "SA=\\pi(r_1+r_2)l+\\pi(r_1^2+r_2^2)",
+      "description": "Surface area of frustum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_214",
+      "title": "Volume of Ellipsoid",
+      "category": "Geometry",
+      "latex": "V=\\frac{4}{3}\\pi abc",
+      "description": "Volume of ellipsoid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_215",
+      "title": "Volume of Paraboloid",
+      "category": "Geometry",
+      "latex": "V=\\frac{1}{2}\\pi r^2h",
+      "description": "Volume of paraboloid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_216",
+      "title": "Volume of Hyperboloid",
+      "category": "Geometry",
+      "latex": "V=\\frac{\\pi h}{3}(2r^2+R^2)",
+      "description": "Volume of hyperboloid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_217",
+      "title": "Cavalieri's Principle",
+      "category": "Geometry",
+      "latex": "Volumes equal if cross-sections equal",
+      "description": "Principle for volume calculation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_218",
+      "title": "Pappus's Centroid Theorem",
+      "category": "Geometry",
+      "latex": "V=2\\pi RA",
+      "description": "Volume of solid of revolution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_219",
+      "title": "Guldinus Theorem",
+      "category": "Geometry",
+      "latex": "SA=2\\pi RL",
+      "description": "Surface area of solid of revolution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_220",
+      "title": "Distance in 3D",
+      "category": "Geometry",
+      "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}",
+      "description": "Distance in 3D space",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_221",
+      "title": "Midpoint in 3D",
+      "category": "Geometry",
+      "latex": "M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2},\\frac{z_1+z_2}{2}\\right)",
+      "description": "Midpoint in 3D",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_222",
+      "title": "Equation of Sphere",
+      "category": "Geometry",
+      "latex": "(x-h)^2+(y-k)^2+(z-l)^2=r^2",
+      "description": "Equation of sphere",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_223",
+      "title": "Equation of Plane",
+      "category": "Geometry",
+      "latex": "ax+by+cz+d=0",
+      "description": "General equation of plane",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_224",
+      "title": "Distance from Point to Plane",
+      "category": "Geometry",
+      "latex": "d=\\frac{|ax_0+by_0+cz_0+d|}{\\sqrt{a^2+b^2+c^2}}",
+      "description": "Distance from point to plane",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_225",
+      "title": "Angle Between Planes",
+      "category": "Geometry",
+      "latex": "\\cos(\\theta)=\\frac{|n_1\\cdot n_2|}{|n_1||n_2|}",
+      "description": "Angle between two planes",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_226",
+      "title": "Line in 3D - Parametric",
+      "category": "Geometry",
+      "latex": "x=x_0+at, y=y_0+bt, z=z_0+ct",
+      "description": "Parametric equation of line",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_227",
+      "title": "Line in 3D - Symmetric",
+      "category": "Geometry",
+      "latex": "\\frac{x-x_0}{a}=\\frac{y-y_0}{b}=\\frac{z-z_0}{c}",
+      "description": "Symmetric equation of line",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_228",
+      "title": "Distance Between Skew Lines",
+      "category": "Geometry",
+      "latex": "d=\\frac{|(P_2-P_1)\\cdot(n_1\\times n_2)|}{|n_1\\times n_2|}",
+      "description": "Distance between skew lines",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_229",
+      "title": "Tetrahedron Volume",
+      "category": "Geometry",
+      "latex": "V=\\frac{1}{6}|\\det(\\vec{AB},\\vec{AC},\\vec{AD})|",
+      "description": "Volume of tetrahedron",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_230",
+      "title": "Octahedron Volume",
+      "category": "Geometry",
+      "latex": "V=\\frac{\\sqrt{2}}{3}a^3",
+      "description": "Volume of regular octahedron",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_231",
+      "title": "Dodecahedron Volume",
+      "category": "Geometry",
+      "latex": "V=\\frac{15+7\\sqrt{5}}{4}a^3",
+      "description": "Volume of regular dodecahedron",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "geo_232",
+      "title": "Icosahedron Volume",
+      "category": "Geometry",
+      "latex": "V=\\frac{5(3+\\sqrt{5})}{12}a^3",
+      "description": "Volume of regular icosahedron",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_233",
+      "title": "Cosecant",
+      "category": "Trigonometry",
+      "latex": "\\csc(\\theta)=\\frac{1}{\\sin(\\theta)}",
+      "description": "Cosecant function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_234",
+      "title": "Secant",
+      "category": "Trigonometry",
+      "latex": "\\sec(\\theta)=\\frac{1}{\\cos(\\theta)}",
+      "description": "Secant function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_235",
+      "title": "Cotangent",
+      "category": "Trigonometry",
+      "latex": "\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}",
+      "description": "Cotangent function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_236",
+      "title": "Inverse Sine",
+      "category": "Trigonometry",
+      "latex": "\\arcsin(x)",
+      "description": "Inverse sine function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_237",
+      "title": "Inverse Cosine",
+      "category": "Trigonometry",
+      "latex": "\\arccos(x)",
+      "description": "Inverse cosine function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_238",
+      "title": "Inverse Tangent",
+      "category": "Trigonometry",
+      "latex": "\\arctan(x)",
+      "description": "Inverse tangent function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_239",
+      "title": "Sum to Product - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(A)+\\sin(B)=2\\sin\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)",
+      "description": "Sum to product for sine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_240",
+      "title": "Sum to Product - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(A)+\\cos(B)=2\\cos\\left(\\frac{A+B}{2}\\right)\\cos\\left(\\frac{A-B}{2}\\right)",
+      "description": "Sum to product for cosine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_241",
+      "title": "Difference to Product - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(A)-\\sin(B)=2\\cos\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)",
+      "description": "Difference to product",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_242",
+      "title": "Difference to Product - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(A)-\\cos(B)=-2\\sin\\left(\\frac{A+B}{2}\\right)\\sin\\left(\\frac{A-B}{2}\\right)",
+      "description": "Difference to product",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_243",
+      "title": "Tangent Sum",
+      "category": "Trigonometry",
+      "latex": "\\tan(A+B)=\\frac{\\tan(A)+\\tan(B)}{1-\\tan(A)\\tan(B)}",
+      "description": "Tangent of sum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_244",
+      "title": "Tangent Difference",
+      "category": "Trigonometry",
+      "latex": "\\tan(A-B)=\\frac{\\tan(A)-\\tan(B)}{1+\\tan(A)\\tan(B)}",
+      "description": "Tangent of difference",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_245",
+      "title": "Tangent Double Angle",
+      "category": "Trigonometry",
+      "latex": "\\tan(2\\theta)=\\frac{2\\tan(\\theta)}{1-\\tan^2(\\theta)}",
+      "description": "Tangent of double angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_246",
+      "title": "Power Reduction - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin^2(\\theta)=\\frac{1-\\cos(2\\theta)}{2}",
+      "description": "Power reduction for sine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_247",
+      "title": "Power Reduction - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos^2(\\theta)=\\frac{1+\\cos(2\\theta)}{2}",
+      "description": "Power reduction for cosine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_248",
+      "title": "Triple Angle - Sine",
+      "category": "Trigonometry",
+      "latex": "\\sin(3\\theta)=3\\sin(\\theta)-4\\sin^3(\\theta)",
+      "description": "Sine of triple angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_249",
+      "title": "Triple Angle - Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cos(3\\theta)=4\\cos^3(\\theta)-3\\cos(\\theta)",
+      "description": "Cosine of triple angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_250",
+      "title": "Sine Law Alternative",
+      "category": "Trigonometry",
+      "latex": "\\frac{a}{\\sin(A)}=\\frac{b}{\\sin(B)}=\\frac{c}{\\sin(C)}=2R",
+      "description": "Extended sine law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_251",
+      "title": "Cosine Law Alternative",
+      "category": "Trigonometry",
+      "latex": "a^2=b^2+c^2-2bc\\cos(A)",
+      "description": "Alternative form of cosine law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_252",
+      "title": "Area using Trig",
+      "category": "Trigonometry",
+      "latex": "A=\\frac{1}{2}ab\\sin(C)",
+      "description": "Area of triangle using trigonometry",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_253",
+      "title": "Mollweide's Formula",
+      "category": "Trigonometry",
+      "latex": "\\frac{a+b}{c}=\\frac{\\cos\\left(\\frac{A-B}{2}\\right)}{\\sin\\left(\\frac{C}{2}\\right)}",
+      "description": "Mollweide's formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_254",
+      "title": "Napier's Analogies",
+      "category": "Trigonometry",
+      "latex": "\\tan\\left(\\frac{A-B}{2}\\right)=\\frac{a-b}{a+b}\\cot\\left(\\frac{C}{2}\\right)",
+      "description": "Napier's analogies",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_255",
+      "title": "Spherical Law of Cosines",
+      "category": "Trigonometry",
+      "latex": "\\cos(a)=\\cos(b)\\cos(c)+\\sin(b)\\sin(c)\\cos(A)",
+      "description": "Spherical triangle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_256",
+      "title": "Spherical Law of Sines",
+      "category": "Trigonometry",
+      "latex": "\\frac{\\sin(a)}{\\sin(A)}=\\frac{\\sin(b)}{\\sin(B)}=\\frac{\\sin(c)}{\\sin(C)}",
+      "description": "Spherical law of sines",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_257",
+      "title": "Hyperbolic Sine",
+      "category": "Trigonometry",
+      "latex": "\\sinh(x)=\\frac{e^x-e^{-x}}{2}",
+      "description": "Hyperbolic sine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_258",
+      "title": "Hyperbolic Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cosh(x)=\\frac{e^x+e^{-x}}{2}",
+      "description": "Hyperbolic cosine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_259",
+      "title": "Hyperbolic Tangent",
+      "category": "Trigonometry",
+      "latex": "\\tanh(x)=\\frac{\\sinh(x)}{\\cosh(x)}",
+      "description": "Hyperbolic tangent",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_260",
+      "title": "Inverse Hyperbolic Sine",
+      "category": "Trigonometry",
+      "latex": "\\sinh^{-1}(x)=\\ln(x+\\sqrt{x^2+1})",
+      "description": "Inverse hyperbolic sine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_261",
+      "title": "Inverse Hyperbolic Cosine",
+      "category": "Trigonometry",
+      "latex": "\\cosh^{-1}(x)=\\ln(x+\\sqrt{x^2-1})",
+      "description": "Inverse hyperbolic cosine",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "trig_262",
+      "title": "Inverse Hyperbolic Tangent",
+      "category": "Trigonometry",
+      "latex": "\\tanh^{-1}(x)=\\frac{1}{2}\\ln\\left(\\frac{1+x}{1-x}\\right)",
+      "description": "Inverse hyperbolic tangent",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_263",
+      "title": "Derivative - Constant",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(c)=0",
+      "description": "Derivative of constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_264",
+      "title": "Derivative - Sum Rule",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(f+g)=f'+g'",
+      "description": "Derivative of sum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_265",
+      "title": "Derivative - Difference Rule",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(f-g)=f'-g'",
+      "description": "Derivative of difference",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_266",
+      "title": "Derivative - Constant Multiple",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(cf)=cf'",
+      "description": "Derivative of constant multiple",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_267",
+      "title": "Derivative of Tangent",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\tan(x))=\\sec^2(x)",
+      "description": "Derivative of tangent",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_268",
+      "title": "Derivative of Secant",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\sec(x))=\\sec(x)\\tan(x)",
+      "description": "Derivative of secant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_269",
+      "title": "Derivative of Cosecant",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\csc(x))=-\\csc(x)\\cot(x)",
+      "description": "Derivative of cosecant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_270",
+      "title": "Derivative of Cotangent",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\cot(x))=-\\csc^2(x)",
+      "description": "Derivative of cotangent",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_271",
+      "title": "Derivative of Arcsin",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\arcsin(x))=\\frac{1}{\\sqrt{1-x^2}}",
+      "description": "Derivative of arcsin",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_272",
+      "title": "Derivative of Arccos",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\arccos(x))=-\\frac{1}{\\sqrt{1-x^2}}",
+      "description": "Derivative of arccos",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_273",
+      "title": "Derivative of Arctan",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\arctan(x))=\\frac{1}{1+x^2}",
+      "description": "Derivative of arctan",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_274",
+      "title": "Derivative of a^x",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(a^x)=a^x\\ln(a)",
+      "description": "Derivative of exponential base a",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_275",
+      "title": "Derivative of log_a(x)",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}(\\log_a(x))=\\frac{1}{x\\ln(a)}",
+      "description": "Derivative of logarithm base a",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_276",
+      "title": "Second Derivative",
+      "category": "Calculus",
+      "latex": "f''(x)=\\frac{d^2}{dx^2}f(x)",
+      "description": "Second derivative",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_277",
+      "title": "Higher Order Derivative",
+      "category": "Calculus",
+      "latex": "f^{(n)}(x)=\\frac{d^n}{dx^n}f(x)",
+      "description": "nth derivative",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_278",
+      "title": "Implicit Differentiation",
+      "category": "Calculus",
+      "latex": "\\frac{dy}{dx}=-\\frac{F_x}{F_y}",
+      "description": "Implicit differentiation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_279",
+      "title": "Related Rates",
+      "category": "Calculus",
+      "latex": "\\frac{dy}{dt}=\\frac{dy}{dx}\\cdot\\frac{dx}{dt}",
+      "description": "Related rates formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_280",
+      "title": "Linear Approximation",
+      "category": "Calculus",
+      "latex": "f(x)\\approx f(a)+f'(a)(x-a)",
+      "description": "Linear approximation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_281",
+      "title": "Taylor Series",
+      "category": "Calculus",
+      "latex": "f(x)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(a)}{n!}(x-a)^n",
+      "description": "Taylor series expansion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_282",
+      "title": "Maclaurin Series",
+      "category": "Calculus",
+      "latex": "f(x)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(0)}{n!}x^n",
+      "description": "Maclaurin series",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_283",
+      "title": "Riemann Sum",
+      "category": "Calculus",
+      "latex": "\\int_a^b f(x)dx=\\lim_{n\\to\\infty}\\sum_{i=1}^n f(x_i^*)\\Delta x",
+      "description": "Riemann sum",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_284",
+      "title": "Fundamental Theorem Part 1",
+      "category": "Calculus",
+      "latex": "\\frac{d}{dx}\\int_a^x f(t)dt=f(x)",
+      "description": "FTC part 1",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_285",
+      "title": "Fundamental Theorem Part 2",
+      "category": "Calculus",
+      "latex": "\\int_a^b f(x)dx=F(b)-F(a)",
+      "description": "FTC part 2",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_286",
+      "title": "U-Substitution",
+      "category": "Calculus",
+      "latex": "\\int f(g(x))g'(x)dx=\\int f(u)du",
+      "description": "U-substitution method",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_287",
+      "title": "Integration by Parts",
+      "category": "Calculus",
+      "latex": "\\int u dv=uv-\\int v du",
+      "description": "Integration by parts",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_288",
+      "title": "Partial Fractions Integration",
+      "category": "Calculus",
+      "latex": "\\int\\frac{P(x)}{Q(x)}dx",
+      "description": "Integration using partial fractions",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_289",
+      "title": "Trigonometric Substitution",
+      "category": "Calculus",
+      "latex": "x=a\\sin(\\theta), x=a\\tan(\\theta), x=a\\sec(\\theta)",
+      "description": "Trig substitution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_290",
+      "title": "Improper Integral Type 1",
+      "category": "Calculus",
+      "latex": "\\int_a^{\\infty} f(x)dx=\\lim_{b\\to\\infty}\\int_a^b f(x)dx",
+      "description": "Improper integral infinite limit",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_291",
+      "title": "Improper Integral Type 2",
+      "category": "Calculus",
+      "latex": "\\int_a^b f(x)dx=\\lim_{t\\to a^+}\\int_t^b f(x)dx",
+      "description": "Improper integral discontinuity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_292",
+      "title": "Arc Length",
+      "category": "Calculus",
+      "latex": "L=\\int_a^b\\sqrt{1+[f'(x)]^2}dx",
+      "description": "Arc length formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_293",
+      "title": "Surface Area of Revolution",
+      "category": "Calculus",
+      "latex": "SA=2\\pi\\int_a^b f(x)\\sqrt{1+[f'(x)]^2}dx",
+      "description": "Surface area of revolution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_294",
+      "title": "Volume by Disks",
+      "category": "Calculus",
+      "latex": "V=\\pi\\int_a^b [f(x)]^2dx",
+      "description": "Volume by disk method",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_295",
+      "title": "Volume by Washers",
+      "category": "Calculus",
+      "latex": "V=\\pi\\int_a^b ([f(x)]^2-[g(x)]^2)dx",
+      "description": "Volume by washer method",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_296",
+      "title": "Volume by Shells",
+      "category": "Calculus",
+      "latex": "V=2\\pi\\int_a^b xf(x)dx",
+      "description": "Volume by shell method",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_297",
+      "title": "Average Value",
+      "category": "Calculus",
+      "latex": "f_{avg}=\\frac{1}{b-a}\\int_a^b f(x)dx",
+      "description": "Average value of function",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_298",
+      "title": "Mean Value Theorem for Integrals",
+      "category": "Calculus",
+      "latex": "f(c)=\\frac{1}{b-a}\\int_a^b f(x)dx",
+      "description": "MVT for integrals",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_299",
+      "title": "Trapezoidal Rule",
+      "category": "Calculus",
+      "latex": "\\int_a^b f(x)dx\\approx\\frac{\\Delta x}{2}[f(x_0)+2f(x_1)+...+2f(x_{n-1})+f(x_n)]",
+      "description": "Trapezoidal approximation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_300",
+      "title": "Simpson's Rule",
+      "category": "Calculus",
+      "latex": "\\int_a^b f(x)dx\\approx\\frac{\\Delta x}{3}[f(x_0)+4f(x_1)+2f(x_2)+...+4f(x_{n-1})+f(x_n)]",
+      "description": "Simpson's rule",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_301",
+      "title": "Limit Definition",
+      "category": "Calculus",
+      "latex": "\\lim_{x\\to a}f(x)=L",
+      "description": "Limit definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_302",
+      "title": "Continuity",
+      "category": "Calculus",
+      "latex": "\\lim_{x\\to a}f(x)=f(a)",
+      "description": "Continuity definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_303",
+      "title": "Squeeze Theorem",
+      "category": "Calculus",
+      "latex": "If g(x)\\leq f(x)\\leq h(x) and \\lim g=\\lim h=L, then \\lim f=L",
+      "description": "Squeeze theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_304",
+      "title": "Intermediate Value Theorem",
+      "category": "Calculus",
+      "latex": "If f continuous on [a,b] and k between f(a) and f(b), then f(c)=k",
+      "description": "IVT",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_305",
+      "title": "Extreme Value Theorem",
+      "category": "Calculus",
+      "latex": "Continuous function on [a,b] attains max and min",
+      "description": "EVT",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_306",
+      "title": "Rolle's Theorem",
+      "category": "Calculus",
+      "latex": "If f(a)=f(b) and f differentiable, then f'(c)=0",
+      "description": "Rolle's theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_307",
+      "title": "Mean Value Theorem",
+      "category": "Calculus",
+      "latex": "f'(c)=\\frac{f(b)-f(a)}{b-a}",
+      "description": "Mean value theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_308",
+      "title": "Critical Point",
+      "category": "Calculus",
+      "latex": "f'(c)=0 or f'(c) undefined",
+      "description": "Critical point definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_309",
+      "title": "First Derivative Test",
+      "category": "Calculus",
+      "latex": "Sign change of f' indicates local extrema",
+      "description": "First derivative test",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_310",
+      "title": "Second Derivative Test",
+      "category": "Calculus",
+      "latex": "f''(c)>0 implies local min, f''(c)<0 implies local max",
+      "description": "Second derivative test",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_311",
+      "title": "Concavity",
+      "category": "Calculus",
+      "latex": "f''(x)>0 implies concave up, f''(x)<0 implies concave down",
+      "description": "Concavity test",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_312",
+      "title": "Inflection Point",
+      "category": "Calculus",
+      "latex": "Point where concavity changes",
+      "description": "Inflection point",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_313",
+      "title": "Optimization",
+      "category": "Calculus",
+      "latex": "Find max/min of function subject to constraints",
+      "description": "Optimization problem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_314",
+      "title": "Newton's Method",
+      "category": "Calculus",
+      "latex": "x_{n+1}=x_n-\\frac{f(x_n)}{f'(x_n)}",
+      "description": "Newton's method for roots",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_315",
+      "title": "Differential",
+      "category": "Calculus",
+      "latex": "dy=f'(x)dx",
+      "description": "Differential definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "calc_316",
+      "title": "Error Approximation",
+      "category": "Calculus",
+      "latex": "\\Delta y\\approx f'(x)\\Delta x",
+      "description": "Error approximation using differentials",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_317",
+      "title": "Uniform Motion",
+      "category": "Mechanics",
+      "latex": "s=ut+\\frac{1}{2}at^2",
+      "description": "Displacement with constant acceleration",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_318",
+      "title": "Velocity-Time Relation",
+      "category": "Mechanics",
+      "latex": "v=u+at",
+      "description": "Final velocity formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_319",
+      "title": "Velocity-Displacement",
+      "category": "Mechanics",
+      "latex": "v^2=u^2+2as",
+      "description": "Velocity squared formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_320",
+      "title": "Average Velocity",
+      "category": "Mechanics",
+      "latex": "v_{avg}=\\frac{u+v}{2}",
+      "description": "Average velocity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_321",
+      "title": "Free Fall",
+      "category": "Mechanics",
+      "latex": "h=\\frac{1}{2}gt^2",
+      "description": "Height in free fall",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_322",
+      "title": "Projectile Motion - Range",
+      "category": "Mechanics",
+      "latex": "R=\\frac{v^2\\sin(2\\theta)}{g}",
+      "description": "Range of projectile",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_323",
+      "title": "Projectile Motion - Max Height",
+      "category": "Mechanics",
+      "latex": "H=\\frac{v^2\\sin^2(\\theta)}{2g}",
+      "description": "Maximum height of projectile",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_324",
+      "title": "Projectile Motion - Time of Flight",
+      "category": "Mechanics",
+      "latex": "T=\\frac{2v\\sin(\\theta)}{g}",
+      "description": "Time of flight",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_325",
+      "title": "Circular Motion - Period",
+      "category": "Mechanics",
+      "latex": "T=\\frac{2\\pi r}{v}",
+      "description": "Period of circular motion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_326",
+      "title": "Circular Motion - Frequency",
+      "category": "Mechanics",
+      "latex": "f=\\frac{1}{T}",
+      "description": "Frequency of circular motion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_327",
+      "title": "Banking Angle",
+      "category": "Mechanics",
+      "latex": "\\tan(\\theta)=\\frac{v^2}{rg}",
+      "description": "Banking angle for curves",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_328",
+      "title": "Friction Force",
+      "category": "Mechanics",
+      "latex": "f=\\mu N",
+      "description": "Friction force",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_329",
+      "title": "Static Friction",
+      "category": "Mechanics",
+      "latex": "f_s\\leq\\mu_s N",
+      "description": "Static friction",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_330",
+      "title": "Kinetic Friction",
+      "category": "Mechanics",
+      "latex": "f_k=\\mu_k N",
+      "description": "Kinetic friction",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_331",
+      "title": "Coefficient of Restitution",
+      "category": "Mechanics",
+      "latex": "e=\\frac{v_2-v_1}{u_1-u_2}",
+      "description": "Coefficient of restitution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_332",
+      "title": "Elastic Collision",
+      "category": "Mechanics",
+      "latex": "m_1u_1+m_2u_2=m_1v_1+m_2v_2",
+      "description": "Momentum conservation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_333",
+      "title": "Inelastic Collision",
+      "category": "Mechanics",
+      "latex": "m_1u_1+m_2u_2=(m_1+m_2)v",
+      "description": "Perfectly inelastic collision",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_334",
+      "title": "Rocket Equation",
+      "category": "Mechanics",
+      "latex": "\\Delta v=v_e\\ln\\left(\\frac{m_0}{m_f}\\right)",
+      "description": "Tsiolkovsky rocket equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_335",
+      "title": "Kepler's First Law",
+      "category": "Mechanics",
+      "latex": "Planets move in elliptical orbits",
+      "description": "Kepler's first law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_336",
+      "title": "Kepler's Second Law",
+      "category": "Mechanics",
+      "latex": "\\frac{dA}{dt}=\\frac{L}{2m}",
+      "description": "Equal areas in equal times",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_337",
+      "title": "Kepler's Third Law",
+      "category": "Mechanics",
+      "latex": "T^2\\propto a^3",
+      "description": "Period squared proportional to semi-major axis cubed",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_338",
+      "title": "Orbital Velocity",
+      "category": "Mechanics",
+      "latex": "v=\\sqrt{\\frac{GM}{r}}",
+      "description": "Orbital velocity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_339",
+      "title": "Escape Velocity (General)",
+      "category": "Mechanics",
+      "latex": "v_e=\\sqrt{\\frac{2GM}{r}}",
+      "description": "Escape velocity formula",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_340",
+      "title": "Gravitational Potential Energy (General)",
+      "category": "Mechanics",
+      "latex": "U=-\\frac{GMm}{r}",
+      "description": "Gravitational potential energy",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_341",
+      "title": "Gravitational Field",
+      "category": "Mechanics",
+      "latex": "g=\\frac{GM}{r^2}",
+      "description": "Gravitational field strength",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_342",
+      "title": "Tidal Force",
+      "category": "Mechanics",
+      "latex": "F_{tidal}\\approx\\frac{2GMmr}{R^3}",
+      "description": "Tidal force approximation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_343",
+      "title": "Rigid Body Rotation",
+      "category": "Mechanics",
+      "latex": "\\tau=I\\alpha",
+      "description": "Torque and angular acceleration",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_344",
+      "title": "Parallel Axis Theorem",
+      "category": "Mechanics",
+      "latex": "I=I_{cm}+md^2",
+      "description": "Moment of inertia parallel axis",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_345",
+      "title": "Perpendicular Axis Theorem",
+      "category": "Mechanics",
+      "latex": "I_z=I_x+I_y",
+      "description": "Perpendicular axis theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_346",
+      "title": "Rolling Without Slipping",
+      "category": "Mechanics",
+      "latex": "v=r\\omega",
+      "description": "Condition for rolling",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_347",
+      "title": "Rolling Kinetic Energy",
+      "category": "Mechanics",
+      "latex": "KE=\\frac{1}{2}mv^2+\\frac{1}{2}I\\omega^2",
+      "description": "Total kinetic energy of rolling",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_348",
+      "title": "Precession",
+      "category": "Mechanics",
+      "latex": "\\Omega=\\frac{mgr}{I\\omega}",
+      "description": "Precession angular velocity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_349",
+      "title": "Elastic Potential Energy",
+      "category": "Mechanics",
+      "latex": "U=\\frac{1}{2}kx^2",
+      "description": "Spring potential energy",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_350",
+      "title": "Damped Harmonic Motion",
+      "category": "Mechanics",
+      "latex": "x=Ae^{-\\gamma t}\\cos(\\omega t+\\phi)",
+      "description": "Damped oscillation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_351",
+      "title": "Natural Frequency",
+      "category": "Mechanics",
+      "latex": "\\omega_0=\\sqrt{\\frac{k}{m}}",
+      "description": "Natural frequency of oscillator",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_352",
+      "title": "Damping Coefficient",
+      "category": "Mechanics",
+      "latex": "\\gamma=\\frac{b}{2m}",
+      "description": "Damping coefficient",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_353",
+      "title": "Quality Factor",
+      "category": "Mechanics",
+      "latex": "Q=\\frac{\\omega_0}{\\gamma}",
+      "description": "Quality factor of oscillator",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_354",
+      "title": "Resonance Frequency",
+      "category": "Mechanics",
+      "latex": "\\omega_r=\\sqrt{\\omega_0^2-\\gamma^2}",
+      "description": "Resonance frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_355",
+      "title": "Forced Oscillation",
+      "category": "Mechanics",
+      "latex": "x=\\frac{F_0/m}{\\sqrt{(\\omega_0^2-\\omega^2)^2+(\\gamma\\omega)^2}}\\cos(\\omega t-\\delta)",
+      "description": "Forced oscillation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_356",
+      "title": "Wave on String",
+      "category": "Mechanics",
+      "latex": "v=\\sqrt{\\frac{T}{\\mu}}",
+      "description": "Wave speed on string",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_357",
+      "title": "Standing Wave",
+      "category": "Mechanics",
+      "latex": "f_n=\\frac{nv}{2L}",
+      "description": "Frequency of standing wave",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_358",
+      "title": "Beat Frequency",
+      "category": "Mechanics",
+      "latex": "f_{beat}=|f_1-f_2|",
+      "description": "Beat frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_359",
+      "title": "Doppler Effect (Sound)",
+      "category": "Mechanics",
+      "latex": "f'=f\\frac{v\\pm v_o}{v\\mp v_s}",
+      "description": "Doppler effect for sound",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_360",
+      "title": "Mach Number",
+      "category": "Mechanics",
+      "latex": "M=\\frac{v}{v_s}",
+      "description": "Mach number",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_361",
+      "title": "Shock Wave Angle",
+      "category": "Mechanics",
+      "latex": "\\sin(\\theta)=\\frac{v_s}{v}",
+      "description": "Shock wave angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_362",
+      "title": "Bernoulli's Principle",
+      "category": "Mechanics",
+      "latex": "P+\\frac{1}{2}\\rho v^2+\\rho gh=constant",
+      "description": "Bernoulli's equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_363",
+      "title": "Continuity Equation",
+      "category": "Mechanics",
+      "latex": "A_1v_1=A_2v_2",
+      "description": "Continuity equation for fluids",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_364",
+      "title": "Poiseuille's Law",
+      "category": "Mechanics",
+      "latex": "Q=\\frac{\\pi r^4\\Delta P}{8\\eta L}",
+      "description": "Flow rate in pipe",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_365",
+      "title": "Stokes' Law",
+      "category": "Mechanics",
+      "latex": "F=6\\pi\\eta rv",
+      "description": "Drag force on sphere",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "mech_366",
+      "title": "Reynolds Number",
+      "category": "Mechanics",
+      "latex": "Re=\\frac{\\rho vL}{\\eta}",
+      "description": "Reynolds number",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_367",
+      "title": "Series Capacitance",
+      "category": "Electricity",
+      "latex": "\\frac{1}{C_{total}}=\\frac{1}{C_1}+\\frac{1}{C_2}+...",
+      "description": "Total capacitance in series",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_368",
+      "title": "Parallel Capacitance",
+      "category": "Electricity",
+      "latex": "C_{total}=C_1+C_2+...",
+      "description": "Total capacitance in parallel",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_369",
+      "title": "Energy Density",
+      "category": "Electricity",
+      "latex": "u=\\frac{1}{2}\\epsilon_0E^2",
+      "description": "Energy density in electric field",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_370",
+      "title": "Gauss's Law",
+      "category": "Electricity",
+      "latex": "\\oint\\vec{E}\\cdot d\\vec{A}=\\frac{Q_{enc}}{\\epsilon_0}",
+      "description": "Gauss's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_371",
+      "title": "Electric Flux",
+      "category": "Electricity",
+      "latex": "\\Phi_E=\\vec{E}\\cdot\\vec{A}",
+      "description": "Electric flux",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_372",
+      "title": "Electric Field - Infinite Plane",
+      "category": "Electricity",
+      "latex": "E=\\frac{\\sigma}{2\\epsilon_0}",
+      "description": "Electric field of infinite plane",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_373",
+      "title": "Electric Field - Line Charge",
+      "category": "Electricity",
+      "latex": "E=\\frac{\\lambda}{2\\pi\\epsilon_0r}",
+      "description": "Electric field of line charge",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_374",
+      "title": "Electric Field - Ring",
+      "category": "Electricity",
+      "latex": "E=\\frac{kQx}{(x^2+R^2)^{3/2}}",
+      "description": "Electric field on axis of ring",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_375",
+      "title": "Electric Field - Disk",
+      "category": "Electricity",
+      "latex": "E=\\frac{\\sigma}{2\\epsilon_0}\\left(1-\\frac{x}{\\sqrt{x^2+R^2}}\\right)",
+      "description": "Electric field of disk",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_376",
+      "title": "Electric Potential Energy",
+      "category": "Electricity",
+      "latex": "U=\\frac{kq_1q_2}{r}",
+      "description": "Potential energy of two charges",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_377",
+      "title": "Capacitor Energy",
+      "category": "Electricity",
+      "latex": "U=\\frac{Q^2}{2C}",
+      "description": "Energy stored in capacitor",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_378",
+      "title": "RC Circuit - Charging",
+      "category": "Electricity",
+      "latex": "Q=Q_0(1-e^{-t/RC})",
+      "description": "Capacitor charging",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_379",
+      "title": "RC Circuit - Discharging",
+      "category": "Electricity",
+      "latex": "Q=Q_0e^{-t/RC}",
+      "description": "Capacitor discharging",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_380",
+      "title": "Time Constant",
+      "category": "Electricity",
+      "latex": "\\tau=RC",
+      "description": "RC time constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_381",
+      "title": "RL Circuit",
+      "category": "Electricity",
+      "latex": "I=I_0(1-e^{-tR/L})",
+      "description": "RL circuit current",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_382",
+      "title": "Inductance Time Constant",
+      "category": "Electricity",
+      "latex": "\\tau=\\frac{L}{R}",
+      "description": "RL time constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_383",
+      "title": "Magnetic Field - Solenoid",
+      "category": "Electricity",
+      "latex": "B=\\mu_0nI",
+      "description": "Magnetic field inside solenoid",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_384",
+      "title": "Magnetic Field - Loop",
+      "category": "Electricity",
+      "latex": "B=\\frac{\\mu_0I}{2R}",
+      "description": "Magnetic field at center of loop",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_385",
+      "title": "Biot-Savart Law",
+      "category": "Electricity",
+      "latex": "d\\vec{B}=\\frac{\\mu_0}{4\\pi}\\frac{Id\\vec{l}\\times\\hat{r}}{r^2}",
+      "description": "Biot-Savart law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_386",
+      "title": "Ampère's Law",
+      "category": "Electricity",
+      "latex": "\\oint\\vec{B}\\cdot d\\vec{l}=\\mu_0I_{enc}",
+      "description": "Ampère's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_387",
+      "title": "Magnetic Flux",
+      "category": "Electricity",
+      "latex": "\\Phi_B=\\vec{B}\\cdot\\vec{A}",
+      "description": "Magnetic flux",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_388",
+      "title": "Self-Inductance",
+      "category": "Electricity",
+      "latex": "L=\\frac{\\Phi_B}{I}",
+      "description": "Self-inductance definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_389",
+      "title": "Mutual Inductance",
+      "category": "Electricity",
+      "latex": "M=\\frac{\\Phi_{21}}{I_1}",
+      "description": "Mutual inductance",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_390",
+      "title": "Induced EMF",
+      "category": "Electricity",
+      "latex": "\\varepsilon=-L\\frac{dI}{dt}",
+      "description": "Self-induced EMF",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_391",
+      "title": "LC Oscillation",
+      "category": "Electricity",
+      "latex": "\\omega=\\frac{1}{\\sqrt{LC}}",
+      "description": "LC circuit frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_392",
+      "title": "RLC Circuit",
+      "category": "Electricity",
+      "latex": "Q=Q_0e^{-Rt/2L}\\cos(\\omega t+\\phi)",
+      "description": "RLC oscillation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_393",
+      "title": "AC Voltage",
+      "category": "Electricity",
+      "latex": "V=V_0\\sin(\\omega t)",
+      "description": "AC voltage",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_394",
+      "title": "AC Current",
+      "category": "Electricity",
+      "latex": "I=I_0\\sin(\\omega t+\\phi)",
+      "description": "AC current",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_395",
+      "title": "RMS Voltage",
+      "category": "Electricity",
+      "latex": "V_{rms}=\\frac{V_0}{\\sqrt{2}}",
+      "description": "Root mean square voltage",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_396",
+      "title": "RMS Current",
+      "category": "Electricity",
+      "latex": "I_{rms}=\\frac{I_0}{\\sqrt{2}}",
+      "description": "Root mean square current",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_397",
+      "title": "AC Power",
+      "category": "Electricity",
+      "latex": "P=I_{rms}V_{rms}\\cos(\\phi)",
+      "description": "AC power",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_398",
+      "title": "Impedance",
+      "category": "Electricity",
+      "latex": "Z=\\sqrt{R^2+(X_L-X_C)^2}",
+      "description": "Impedance",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_399",
+      "title": "Inductive Reactance",
+      "category": "Electricity",
+      "latex": "X_L=\\omega L",
+      "description": "Inductive reactance",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_400",
+      "title": "Capacitive Reactance",
+      "category": "Electricity",
+      "latex": "X_C=\\frac{1}{\\omega C}",
+      "description": "Capacitive reactance",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_401",
+      "title": "Resonance Frequency",
+      "category": "Electricity",
+      "latex": "\\omega_0=\\frac{1}{\\sqrt{LC}}",
+      "description": "Resonance frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_402",
+      "title": "Power Factor",
+      "category": "Electricity",
+      "latex": "\\cos(\\phi)=\\frac{R}{Z}",
+      "description": "Power factor",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_403",
+      "title": "Maxwell's Equations - Gauss",
+      "category": "Electricity",
+      "latex": "\\nabla\\cdot\\vec{E}=\\frac{\\rho}{\\epsilon_0}",
+      "description": "Gauss's law differential",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_404",
+      "title": "Maxwell's Equations - Gauss Magnetic",
+      "category": "Electricity",
+      "latex": "\\nabla\\cdot\\vec{B}=0",
+      "description": "No magnetic monopoles",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_405",
+      "title": "Maxwell's Equations - Faraday",
+      "category": "Electricity",
+      "latex": "\\nabla\\times\\vec{E}=-\\frac{\\partial\\vec{B}}{\\partial t}",
+      "description": "Faraday's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_406",
+      "title": "Maxwell's Equations - Ampère",
+      "category": "Electricity",
+      "latex": "\\nabla\\times\\vec{B}=\\mu_0\\vec{J}+\\mu_0\\epsilon_0\\frac{\\partial\\vec{E}}{\\partial t}",
+      "description": "Ampère-Maxwell law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "elec_407",
+      "title": "Poynting Vector",
+      "category": "Electricity",
+      "latex": "\\vec{S}=\\frac{1}{\\mu_0}\\vec{E}\\times\\vec{B}",
+      "description": "Energy flux",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_408",
+      "title": "Standing Wave - String",
+      "category": "Waves",
+      "latex": "\\lambda_n=\\frac{2L}{n}",
+      "description": "Wavelength of standing wave",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_409",
+      "title": "Beat Frequency",
+      "category": "Waves",
+      "latex": "f_{beat}=|f_1-f_2|",
+      "description": "Beat frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_410",
+      "title": "Intensity",
+      "category": "Waves",
+      "latex": "I=\\frac{P}{A}",
+      "description": "Wave intensity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_411",
+      "title": "Intensity Level",
+      "category": "Waves",
+      "latex": "\\beta=10\\log\\left(\\frac{I}{I_0}\\right)",
+      "description": "Sound intensity level in dB",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_412",
+      "title": "Doppler Effect - Light",
+      "category": "Waves",
+      "latex": "f'=f\\sqrt{\\frac{1+v/c}{1-v/c}}",
+      "description": "Relativistic Doppler effect",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_413",
+      "title": "Bragg's Law",
+      "category": "Waves",
+      "latex": "n\\lambda=2d\\sin(\\theta)",
+      "description": "X-ray diffraction",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_414",
+      "title": "Diffraction Grating",
+      "category": "Waves",
+      "latex": "d\\sin(\\theta)=m\\lambda",
+      "description": "Diffraction grating equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_415",
+      "title": "Resolving Power",
+      "category": "Waves",
+      "latex": "R=\\frac{\\lambda}{\\Delta\\lambda}",
+      "description": "Resolving power",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_416",
+      "title": "Rayleigh Criterion",
+      "category": "Waves",
+      "latex": "\\theta=1.22\\frac{\\lambda}{D}",
+      "description": "Angular resolution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_417",
+      "title": "Thin Film Interference",
+      "category": "Waves",
+      "latex": "2nt=m\\lambda",
+      "description": "Constructive interference",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_418",
+      "title": "Brewster's Angle",
+      "category": "Waves",
+      "latex": "\\tan(\\theta_B)=\\frac{n_2}{n_1}",
+      "description": "Brewster's angle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_419",
+      "title": "Malus's Law",
+      "category": "Waves",
+      "latex": "I=I_0\\cos^2(\\theta)",
+      "description": "Polarized light intensity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_420",
+      "title": "Refractive Index",
+      "category": "Waves",
+      "latex": "n=\\frac{c}{v}",
+      "description": "Refractive index",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_421",
+      "title": "Critical Angle",
+      "category": "Waves",
+      "latex": "\\sin(\\theta_c)=\\frac{n_2}{n_1}",
+      "description": "Total internal reflection",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_422",
+      "title": "Lensmaker's Equation",
+      "category": "Waves",
+      "latex": "\\frac{1}{f}=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)",
+      "description": "Lensmaker's equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_423",
+      "title": "Angular Magnification",
+      "category": "Waves",
+      "latex": "M=\\frac{\\theta'}{\\theta}",
+      "description": "Angular magnification",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_424",
+      "title": "Numerical Aperture",
+      "category": "Waves",
+      "latex": "NA=n\\sin(\\theta)",
+      "description": "Numerical aperture",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_425",
+      "title": "Fresnel Equations",
+      "category": "Waves",
+      "latex": "r=\\frac{n_1-n_2}{n_1+n_2}",
+      "description": "Reflection coefficient",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_426",
+      "title": "Group Velocity",
+      "category": "Waves",
+      "latex": "v_g=\\frac{d\\omega}{dk}",
+      "description": "Group velocity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_427",
+      "title": "Phase Velocity",
+      "category": "Waves",
+      "latex": "v_p=\\frac{\\omega}{k}",
+      "description": "Phase velocity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_428",
+      "title": "Dispersion Relation",
+      "category": "Waves",
+      "latex": "\\omega(k)",
+      "description": "Dispersion relation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_429",
+      "title": "Wave Packet",
+      "category": "Waves",
+      "latex": "\\Delta x\\Delta k\\geq\\frac{1}{2}",
+      "description": "Wave packet uncertainty",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_430",
+      "title": "Coherence Length",
+      "category": "Waves",
+      "latex": "l_c=\\frac{c}{\\Delta\\nu}",
+      "description": "Coherence length",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_431",
+      "title": "Coherence Time",
+      "category": "Waves",
+      "latex": "\\tau_c=\\frac{1}{\\Delta\\nu}",
+      "description": "Coherence time",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_432",
+      "title": "Huygens' Principle",
+      "category": "Waves",
+      "latex": "Every point on wavefront is source of spherical waves",
+      "description": "Huygens' principle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_433",
+      "title": "Fermat's Principle",
+      "category": "Waves",
+      "latex": "Light takes path of least time",
+      "description": "Fermat's principle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_434",
+      "title": "Optical Path Length",
+      "category": "Waves",
+      "latex": "OPL=\\int n(s)ds",
+      "description": "Optical path length",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_435",
+      "title": "Abbe Number",
+      "category": "Waves",
+      "latex": "V=\\frac{n_D-1}{n_F-n_C}",
+      "description": "Abbe number for dispersion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_436",
+      "title": "Chromatic Aberration",
+      "category": "Waves",
+      "latex": "\\Delta f=\\frac{f}{V}",
+      "description": "Chromatic aberration",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "wave_437",
+      "title": "Spherical Aberration",
+      "category": "Waves",
+      "latex": "SA=\\frac{h^4}{8f^3}",
+      "description": "Spherical aberration",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_438",
+      "title": "Boyle's Law",
+      "category": "Thermodynamics",
+      "latex": "P_1V_1=P_2V_2",
+      "description": "Pressure-volume relationship",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_439",
+      "title": "Charles's Law",
+      "category": "Thermodynamics",
+      "latex": "\\frac{V_1}{T_1}=\\frac{V_2}{T_2}",
+      "description": "Volume-temperature relationship",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_440",
+      "title": "Gay-Lussac's Law",
+      "category": "Thermodynamics",
+      "latex": "\\frac{P_1}{T_1}=\\frac{P_2}{T_2}",
+      "description": "Pressure-temperature relationship",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_441",
+      "title": "Combined Gas Law",
+      "category": "Thermodynamics",
+      "latex": "\\frac{P_1V_1}{T_1}=\\frac{P_2V_2}{T_2}",
+      "description": "Combined gas law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_442",
+      "title": "Avogadro's Law",
+      "category": "Thermodynamics",
+      "latex": "\\frac{V_1}{n_1}=\\frac{V_2}{n_2}",
+      "description": "Volume-mole relationship",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_443",
+      "title": "Van der Waals Equation",
+      "category": "Thermodynamics",
+      "latex": "\\left(P+\\frac{an^2}{V^2}\\right)(V-nb)=nRT",
+      "description": "Van der Waals equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_444",
+      "title": "Maxwell-Boltzmann Distribution",
+      "category": "Thermodynamics",
+      "latex": "f(v)=4\\pi n\\left(\\frac{m}{2\\pi kT}\\right)^{3/2}v^2e^{-mv^2/2kT}",
+      "description": "Speed distribution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_445",
+      "title": "Most Probable Speed",
+      "category": "Thermodynamics",
+      "latex": "v_{mp}=\\sqrt{\\frac{2kT}{m}}",
+      "description": "Most probable speed",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_446",
+      "title": "Average Speed",
+      "category": "Thermodynamics",
+      "latex": "\\bar{v}=\\sqrt{\\frac{8kT}{\\pi m}}",
+      "description": "Average speed",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_447",
+      "title": "RMS Speed",
+      "category": "Thermodynamics",
+      "latex": "v_{rms}=\\sqrt{\\frac{3kT}{m}}",
+      "description": "Root mean square speed",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_448",
+      "title": "Mean Free Path",
+      "category": "Thermodynamics",
+      "latex": "\\lambda=\\frac{1}{\\sqrt{2}\\pi d^2n}",
+      "description": "Mean free path",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_449",
+      "title": "Collision Frequency",
+      "category": "Thermodynamics",
+      "latex": "Z=\\sqrt{2}\\pi d^2\\bar{v}n",
+      "description": "Collision frequency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_450",
+      "title": "Heat Capacity",
+      "category": "Thermodynamics",
+      "latex": "C=\\frac{Q}{\\Delta T}",
+      "description": "Heat capacity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_451",
+      "title": "Specific Heat Capacity",
+      "category": "Thermodynamics",
+      "latex": "c=\\frac{Q}{m\\Delta T}",
+      "description": "Specific heat capacity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_452",
+      "title": "Molar Heat Capacity",
+      "category": "Thermodynamics",
+      "latex": "C_m=\\frac{Q}{n\\Delta T}",
+      "description": "Molar heat capacity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_453",
+      "title": "Latent Heat of Fusion",
+      "category": "Thermodynamics",
+      "latex": "Q=mL_f",
+      "description": "Latent heat of fusion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_454",
+      "title": "Latent Heat of Vaporization",
+      "category": "Thermodynamics",
+      "latex": "Q=mL_v",
+      "description": "Latent heat of vaporization",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_455",
+      "title": "Heat of Combustion",
+      "category": "Thermodynamics",
+      "latex": "\\Delta H_{comb}",
+      "description": "Heat of combustion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_456",
+      "title": "Enthalpy",
+      "category": "Thermodynamics",
+      "latex": "H=U+PV",
+      "description": "Enthalpy definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_457",
+      "title": "Enthalpy Change",
+      "category": "Thermodynamics",
+      "latex": "\\Delta H=\\Delta U+P\\Delta V",
+      "description": "Enthalpy change",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_458",
+      "title": "Hess's Law",
+      "category": "Thermodynamics",
+      "latex": "\\Delta H_{total}=\\sum\\Delta H_i",
+      "description": "Hess's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_459",
+      "title": "Bond Energy",
+      "category": "Thermodynamics",
+      "latex": "\\Delta H=\\sum BE_{reactants}-\\sum BE_{products}",
+      "description": "Bond energy calculation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_460",
+      "title": "Entropy",
+      "category": "Thermodynamics",
+      "latex": "\\Delta S=\\int\\frac{dQ_{rev}}{T}",
+      "description": "Entropy definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_461",
+      "title": "Entropy Change - Isothermal",
+      "category": "Thermodynamics",
+      "latex": "\\Delta S=\\frac{Q}{T}",
+      "description": "Entropy change isothermal",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_462",
+      "title": "Entropy Change - Adiabatic",
+      "category": "Thermodynamics",
+      "latex": "\\Delta S=0",
+      "description": "Entropy change adiabatic",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_463",
+      "title": "Entropy Change - Ideal Gas",
+      "category": "Thermodynamics",
+      "latex": "\\Delta S=nR\\ln\\left(\\frac{V_2}{V_1}\\right)",
+      "description": "Entropy change ideal gas",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_464",
+      "title": "Gibbs Free Energy",
+      "category": "Thermodynamics",
+      "latex": "G=H-TS",
+      "description": "Gibbs free energy",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_465",
+      "title": "Gibbs Free Energy Change",
+      "category": "Thermodynamics",
+      "latex": "\\Delta G=\\Delta H-T\\Delta S",
+      "description": "Gibbs free energy change",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_466",
+      "title": "Spontaneity",
+      "category": "Thermodynamics",
+      "latex": "\\Delta G<0 implies spontaneous",
+      "description": "Spontaneity criterion",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_467",
+      "title": "Clausius-Clapeyron Equation",
+      "category": "Thermodynamics",
+      "latex": "\\ln\\left(\\frac{P_2}{P_1}\\right)=\\frac{\\Delta H_{vap}}{R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right)",
+      "description": "Vapor pressure",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_468",
+      "title": "Heat Engine Efficiency",
+      "category": "Thermodynamics",
+      "latex": "\\eta=\\frac{W}{Q_h}=1-\\frac{Q_c}{Q_h}",
+      "description": "Heat engine efficiency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_469",
+      "title": "Carnot Efficiency",
+      "category": "Thermodynamics",
+      "latex": "\\eta=1-\\frac{T_c}{T_h}",
+      "description": "Carnot efficiency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_470",
+      "title": "Coefficient of Performance",
+      "category": "Thermodynamics",
+      "latex": "COP=\\frac{Q_c}{W}",
+      "description": "Refrigerator COP",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_471",
+      "title": "Heat Pump COP",
+      "category": "Thermodynamics",
+      "latex": "COP_{HP}=\\frac{Q_h}{W}",
+      "description": "Heat pump coefficient",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_472",
+      "title": "Otto Cycle Efficiency",
+      "category": "Thermodynamics",
+      "latex": "\\eta=1-\\frac{1}{r^{\\gamma-1}}",
+      "description": "Otto cycle efficiency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_473",
+      "title": "Diesel Cycle Efficiency",
+      "category": "Thermodynamics",
+      "latex": "\\eta=1-\\frac{1}{r^{\\gamma-1}}\\frac{\\rho^{\\gamma}-1}{\\gamma(\\rho-1)}",
+      "description": "Diesel cycle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_474",
+      "title": "Brayton Cycle",
+      "category": "Thermodynamics",
+      "latex": "\\eta=1-\\frac{1}{r_p^{(\\gamma-1)/\\gamma}}",
+      "description": "Brayton cycle efficiency",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_475",
+      "title": "Stefan-Boltzmann Law",
+      "category": "Thermodynamics",
+      "latex": "P=\\sigma AT^4",
+      "description": "Radiated power",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_476",
+      "title": "Wien's Displacement Law",
+      "category": "Thermodynamics",
+      "latex": "\\lambda_{max}T=b",
+      "description": "Wien's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "thermo_477",
+      "title": "Planck's Law",
+      "category": "Thermodynamics",
+      "latex": "B(\\lambda,T)=\\frac{2hc^2}{\\lambda^5}\\frac{1}{e^{hc/\\lambda kT}-1}",
+      "description": "Blackbody radiation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_478",
+      "title": "Mole Fraction",
+      "category": "Chemistry",
+      "latex": "X_i=\\frac{n_i}{n_{total}}",
+      "description": "Mole fraction",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_479",
+      "title": "Mass Percent",
+      "category": "Chemistry",
+      "latex": "\\%=\\frac{mass_{solute}}{mass_{solution}}\\times100",
+      "description": "Mass percent",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_480",
+      "title": "Volume Percent",
+      "category": "Chemistry",
+      "latex": "\\%=\\frac{volume_{solute}}{volume_{solution}}\\times100",
+      "description": "Volume percent",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_481",
+      "title": "Parts Per Million",
+      "category": "Chemistry",
+      "latex": "ppm=\\frac{mass_{solute}}{mass_{solution}}\\times10^6",
+      "description": "Parts per million",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_482",
+      "title": "Molality",
+      "category": "Chemistry",
+      "latex": "m=\\frac{moles_{solute}}{kg_{solvent}}",
+      "description": "Molality",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_483",
+      "title": "Normality",
+      "category": "Chemistry",
+      "latex": "N=\\frac{equivalents}{L}",
+      "description": "Normality",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_484",
+      "title": "Raoult's Law",
+      "category": "Chemistry",
+      "latex": "P_i=X_iP_i^0",
+      "description": "Raoult's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_485",
+      "title": "Henry's Law",
+      "category": "Chemistry",
+      "latex": "C=kP",
+      "description": "Henry's law",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_486",
+      "title": "Colligative Properties - Boiling Point",
+      "category": "Chemistry",
+      "latex": "\\Delta T_b=K_bm",
+      "description": "Boiling point elevation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_487",
+      "title": "Colligative Properties - Freezing Point",
+      "category": "Chemistry",
+      "latex": "\\Delta T_f=K_fm",
+      "description": "Freezing point depression",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_488",
+      "title": "Osmotic Pressure",
+      "category": "Chemistry",
+      "latex": "\\Pi=MRT",
+      "description": "Osmotic pressure",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_489",
+      "title": "Van't Hoff Factor",
+      "category": "Chemistry",
+      "latex": "i=\\frac{actual\\ particles}{formula\\ units}",
+      "description": "Van't Hoff factor",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_490",
+      "title": "Rate Constant",
+      "category": "Chemistry",
+      "latex": "k=Ae^{-E_a/RT}",
+      "description": "Arrhenius equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_491",
+      "title": "Half-Life - First Order",
+      "category": "Chemistry",
+      "latex": "t_{1/2}=\\frac{\\ln(2)}{k}",
+      "description": "First order half-life",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_492",
+      "title": "Half-Life - Second Order",
+      "category": "Chemistry",
+      "latex": "t_{1/2}=\\frac{1}{k[A]_0}",
+      "description": "Second order half-life",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_493",
+      "title": "Integrated Rate Law - First Order",
+      "category": "Chemistry",
+      "latex": "\\ln[A]=-kt+\\ln[A]_0",
+      "description": "First order integrated",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_494",
+      "title": "Integrated Rate Law - Second Order",
+      "category": "Chemistry",
+      "latex": "\\frac{1}{[A]}=kt+\\frac{1}{[A]_0}",
+      "description": "Second order integrated",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_495",
+      "title": "Equilibrium Constant",
+      "category": "Chemistry",
+      "latex": "K=\\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+      "description": "Equilibrium constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_496",
+      "title": "Reaction Quotient",
+      "category": "Chemistry",
+      "latex": "Q=\\frac{[C]^c[D]^d}{[A]^a[B]^b}",
+      "description": "Reaction quotient",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_497",
+      "title": "Le Chatelier's Principle",
+      "category": "Chemistry",
+      "latex": "System shifts to counteract change",
+      "description": "Le Chatelier's principle",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_498",
+      "title": "Acid Dissociation Constant",
+      "category": "Chemistry",
+      "latex": "K_a=\\frac{[H^+][A^-]}{[HA]}",
+      "description": "Acid dissociation constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_499",
+      "title": "Base Dissociation Constant",
+      "category": "Chemistry",
+      "latex": "K_b=\\frac{[OH^-][BH^+]}{[B]}",
+      "description": "Base dissociation constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_500",
+      "title": "Water Ion Product",
+      "category": "Chemistry",
+      "latex": "K_w=[H^+][OH^-]=10^{-14}",
+      "description": "Water ion product",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_501",
+      "title": "pKa",
+      "category": "Chemistry",
+      "latex": "pK_a=-\\log(K_a)",
+      "description": "pKa definition",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_502",
+      "title": "Buffer Capacity",
+      "category": "Chemistry",
+      "latex": "\\beta=\\frac{dC_b}{dpH}",
+      "description": "Buffer capacity",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_503",
+      "title": "Titration - Equivalence Point",
+      "category": "Chemistry",
+      "latex": "M_aV_a=M_bV_b",
+      "description": "Equivalence point",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_504",
+      "title": "Redox - Nernst Equation",
+      "category": "Chemistry",
+      "latex": "E=E^0-\\frac{RT}{nF}\\ln(Q)",
+      "description": "Nernst equation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_505",
+      "title": "Standard Cell Potential",
+      "category": "Chemistry",
+      "latex": "E^0_{cell}=E^0_{cathode}-E^0_{anode}",
+      "description": "Standard cell potential",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_506",
+      "title": "Faraday's Constant",
+      "category": "Chemistry",
+      "latex": "F=96485\\ C/mol",
+      "description": "Faraday's constant",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "chem_507",
+      "title": "Electrolysis",
+      "category": "Chemistry",
+      "latex": "m=\\frac{MIt}{nF}",
+      "description": "Mass deposited in electrolysis",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_508",
+      "title": "Sample Mean",
+      "category": "Statistics",
+      "latex": "\\bar{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i",
+      "description": "Sample mean",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_509",
+      "title": "Sample Variance",
+      "category": "Statistics",
+      "latex": "s^2=\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2",
+      "description": "Sample variance",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_510",
+      "title": "Sample Standard Deviation",
+      "category": "Statistics",
+      "latex": "s=\\sqrt{\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i-\\bar{x})^2}",
+      "description": "Sample standard deviation",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_511",
+      "title": "Standard Error",
+      "category": "Statistics",
+      "latex": "SE=\\frac{\\sigma}{\\sqrt{n}}",
+      "description": "Standard error of mean",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_512",
+      "title": "Confidence Interval",
+      "category": "Statistics",
+      "latex": "\\bar{x}\\pm z\\frac{\\sigma}{\\sqrt{n}}",
+      "description": "Confidence interval",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_513",
+      "title": "T-Statistic",
+      "category": "Statistics",
+      "latex": "t=\\frac{\\bar{x}-\\mu}{s/\\sqrt{n}}",
+      "description": "T-statistic",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_514",
+      "title": "Chi-Square Statistic",
+      "category": "Statistics",
+      "latex": "\\chi^2=\\sum\\frac{(O-E)^2}{E}",
+      "description": "Chi-square statistic",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_515",
+      "title": "F-Statistic",
+      "category": "Statistics",
+      "latex": "F=\\frac{s_1^2}{s_2^2}",
+      "description": "F-statistic",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_516",
+      "title": "Regression Line",
+      "category": "Statistics",
+      "latex": "y=a+bx",
+      "description": "Linear regression",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_517",
+      "title": "Slope of Regression",
+      "category": "Statistics",
+      "latex": "b=\\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}",
+      "description": "Regression slope",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_518",
+      "title": "Y-Intercept",
+      "category": "Statistics",
+      "latex": "a=\\bar{y}-b\\bar{x}",
+      "description": "Y-intercept",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_519",
+      "title": "Coefficient of Determination",
+      "category": "Statistics",
+      "latex": "R^2=1-\\frac{SS_{res}}{SS_{tot}}",
+      "description": "R-squared",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_520",
+      "title": "Poisson Distribution",
+      "category": "Statistics",
+      "latex": "P(X=k)=\\frac{\\lambda^ke^{-\\lambda}}{k!}",
+      "description": "Poisson distribution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_521",
+      "title": "Exponential Distribution",
+      "category": "Statistics",
+      "latex": "f(x)=\\lambda e^{-\\lambda x}",
+      "description": "Exponential distribution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_522",
+      "title": "Gamma Distribution",
+      "category": "Statistics",
+      "latex": "f(x)=\\frac{\\lambda^r x^{r-1}e^{-\\lambda x}}{\\Gamma(r)}",
+      "description": "Gamma distribution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_523",
+      "title": "Beta Distribution",
+      "category": "Statistics",
+      "latex": "f(x)=\\frac{x^{\\alpha-1}(1-x)^{\\beta-1}}{B(\\alpha,\\beta)}",
+      "description": "Beta distribution",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_524",
+      "title": "Central Limit Theorem",
+      "category": "Statistics",
+      "latex": "\\bar{X}\\sim N(\\mu,\\frac{\\sigma^2}{n})",
+      "description": "Central limit theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_525",
+      "title": "Law of Large Numbers",
+      "category": "Statistics",
+      "latex": "\\lim_{n\\to\\infty}\\bar{X}_n=\\mu",
+      "description": "Law of large numbers",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_526",
+      "title": "Bayes' Theorem",
+      "category": "Statistics",
+      "latex": "P(A|B)=\\frac{P(B|A)P(A)}{P(B)}",
+      "description": "Bayes' theorem",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_527",
+      "title": "Conditional Probability",
+      "category": "Statistics",
+      "latex": "P(A|B)=\\frac{P(A\\cap B)}{P(B)}",
+      "description": "Conditional probability",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_528",
+      "title": "Independent Events",
+      "category": "Statistics",
+      "latex": "P(A\\cap B)=P(A)P(B)",
+      "description": "Independent events",
+      "variables": [],
+      "calculator": null
+    },
+    {
+      "id": "stat_529",
+      "title": "Mutually Exclusive",
+      "category": "Statistics",
+      "latex": "P(A\\cup B)=P(A)+P(B)",
+      "description": "Mutually exclusive events",
+      "variables": [],
+      "calculator": null
+    }
+  ]
+}
