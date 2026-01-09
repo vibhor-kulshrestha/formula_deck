@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'dart:io';
 import 'utils/app_theme.dart';
+import 'utils/adaptive_theme.dart';
 import 'utils/app_router.dart';
 import 'services/hive_service.dart';
 import 'services/ads_service.dart';
@@ -20,18 +23,29 @@ void main() async {
   }
   
   // Initialize Hive
-  await HiveService.init();
+  try {
+    await HiveService.init();
+  } catch (e) {
+    debugPrint('Hive initialization error: $e');
+  }
   
-  // Initialize AdMob
-  await AdsService.init();
+  // Initialize AdMob (optional - wrap in try-catch for iOS)
+  try {
+    await AdsService.init();
+  } catch (e) {
+    debugPrint('AdMob initialization error: $e');
+  }
   
-  // Initialize IAP
-  await IAPService.init();
-  
-  // Listen to IAP purchase updates
-  IAPService.purchaseUpdated.listen((purchases) {
-    // Handle purchases (already handled in IAPService)
-  });
+  // Initialize IAP (optional - wrap in try-catch for iOS)
+  try {
+    await IAPService.init();
+    // Listen to IAP purchase updates
+    IAPService.purchaseUpdated.listen((purchases) {
+      // Handle purchases (already handled in IAPService)
+    });
+  } catch (e) {
+    debugPrint('IAP initialization error: $e');
+  }
   
   runApp(
     const ProviderScope(
@@ -47,6 +61,17 @@ class FormulaDeckApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final darkMode = ref.watch(darkModeProvider);
 
+    if (Platform.isIOS) {
+      // iOS: Use CupertinoApp with adaptive theme
+      return CupertinoApp.router(
+        title: 'FormulaDeck',
+        debugShowCheckedModeBanner: false,
+        theme: AdaptiveTheme.getCupertinoTheme(darkMode),
+        routerConfig: appRouter,
+      );
+    }
+
+    // Android: Use MaterialApp
     return MaterialApp.router(
       title: 'FormulaDeck',
       debugShowCheckedModeBanner: false,

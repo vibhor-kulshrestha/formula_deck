@@ -1,10 +1,14 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../widgets/formula_card.dart';
+import '../widgets/ios_formula_card.dart';
 import '../widgets/native_ad_widget.dart';
 import '../widgets/banner_ad_widget.dart';
+import '../widgets/adaptive_search_field.dart';
 import '../providers/formula_provider.dart';
+import 'ios_home_screen.dart';
 
 /// Home screen with searchable formula list
 class HomeScreen extends ConsumerStatefulWidget {
@@ -27,6 +31,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Use iOS-optimized screen on iOS
+    if (Platform.isIOS) {
+      return const IOSHomeScreen();
+    }
+
     final formulasAsync = ref.watch(filteredFormulasProvider);
     final categoriesAsync = ref.watch(categoriesProvider);
 
@@ -49,23 +58,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           // Search bar
           Padding(
             padding: const EdgeInsets.all(16),
-            child: TextField(
+            child: AdaptiveSearchField(
               controller: _searchController,
-              decoration: InputDecoration(
-                hintText: 'Search formulas...',
-                prefixIcon: const Icon(Icons.search),
-                suffixIcon: _searchController.text.isNotEmpty
-                    ? IconButton(
-                        icon: const Icon(Icons.clear),
-                        onPressed: () {
-                          _searchController.clear();
-                          ref.read(searchQueryProvider.notifier).state = '';
-                        },
-                      )
-                    : null,
-              ),
+              hintText: 'Search formulas...',
               onChanged: (value) {
                 ref.read(searchQueryProvider.notifier).state = value;
+              },
+              onClear: () {
+                _searchController.clear();
+                ref.read(searchQueryProvider.notifier).state = '';
               },
             ),
           ),
@@ -151,6 +152,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     }
 
                     final formula = formulas[formulaIndex];
+                    // Use iOS card on iOS, Material card on Android
+                    if (Platform.isIOS) {
+                      return IOSFormulaCard(
+                        formula: formula,
+                        onTap: () {
+                          context.push('/formula/${formula.id}');
+                        },
+                      );
+                    }
                     return FormulaCard(
                       formula: formula,
                       onTap: () {

@@ -23,12 +23,17 @@ class IAPService {
 
   /// Initialize IAP
   static Future<void> init() async {
-    final bool available = await _iap.isAvailable();
-    _isAvailable = available;
+    try {
+      final bool available = await _iap.isAvailable();
+      _isAvailable = available;
 
-    if (available) {
-      await _loadProducts();
-      _iap.purchaseStream.listen(_onPurchaseUpdate);
+      if (available) {
+        await _loadProducts();
+        _iap.purchaseStream.listen(_onPurchaseUpdate);
+      }
+    } catch (e) {
+      debugPrint('IAP initialization failed: $e');
+      _isAvailable = false;
     }
   }
 

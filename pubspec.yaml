@@ -45,6 +45,9 @@ dependencies:
   
   # Haptics
   haptic_feedback: ^0.6.4+3
+  
+  # Platform detection
+  device_info_plus: ^10.1.2
 
 dev_dependencies:
   flutter_test:

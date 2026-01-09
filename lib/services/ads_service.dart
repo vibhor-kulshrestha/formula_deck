@@ -21,8 +21,14 @@ class AdsService {
   static Future<void> init() async {
     if (_isInitialized) return;
     
-    await MobileAds.instance.initialize();
-    _isInitialized = true;
+    try {
+      await MobileAds.instance.initialize();
+      _isInitialized = true;
+    } catch (e) {
+      debugPrint('AdMob initialization failed: $e');
+      // Continue without ads if initialization fails
+      _isInitialized = false;
+    }
   }
 
   /// Check if ads should be shown
